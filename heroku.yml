@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: /alphaX/Dockerfile
+run:
+   worker: npm start
