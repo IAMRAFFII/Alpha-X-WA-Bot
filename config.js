@@ -35,8 +35,8 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;/#]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    GIFWEL: process.env.GIF_WEL === undefined ? 'default' : process.env.GIF_WEL,
-    GIFBYE: process.env.GIF_BYE === undefined ? 'default' : process.env.GIF_BYE,
+    GIFWEL: process.env.GIF_WEL === undefined ? '' : process.env.GIF_WEL,
+    GIFBYE: process.env.GIF_BYE === undefined ? '' : process.env.GIF_BYE,
     CAPTION: process.env.CAPTION === undefined ? '༺🚀 Mᴀᴅᴇ Bʏ Ａｌｐｈａ-Ｘ 🔮࿐' : process.env.CAPTION,
     BOTNAME: process.env.BOT_NAME === undefined ? '≪━─━─━─━─😎─━─━─━─━≫\n          *🚀 Ａｌｐｈａ-Ｘ 🚀*\n        ╚╩══• •✠•❀•✠ • •══╩╝' : process.env.BOT_NAME,
     BIONAME: process.env.BIO_NAME === undefined ? '🛸 Ａｌｐｈａ X 🚀' : process.env.BIO_NAME,
@@ -46,7 +46,10 @@ module.exports = {
     U_SONG: process.env.UPLOAD_SONG === undefined ? 'default' : process.env.UPLOAD_SONG,
     D_VIDEO: process.env.DOWNLOAD_VIDEO === undefined ? 'default' : process.env.DOWNLOAD_VIDEO,
     U_VIDEO: process.env.UPLOAD_VIDEO === undefined ? 'default' : process.env.UPLOAD_VIDEO,
-    U_NAME: process.env.USER_NAME === undefined ? 'Ａｌｐｈａ' : process.env.USER_NAME,
+    U_NAME: process.env.USER_NAME === undefined ? '<😉>' : process.env.USER_NAME,
+    C_EMOJI: process.env.COMMAND_EMOJI === undefined ? '🛸' : process.env.C_EMOJI,
+    D_EMOJI: process.env.DESC_EMOJI === undefined ? '🧮' : process.env.D_EMOJI,
+    W_EMOJI: process.env.WARN_EMOJI === undefined ? '⚠️️' : process.env.W_EMOJI,
     B_PASSWORD: process.env.BOT_PASSWORD === undefined ? 'false' : process.env.BOT_PASSWORD,
     A_PIC: process.env.ALIVE_PIC === undefined ? 'https://telegra.ph/file/37c44022badbca8cf6635.jpg' : process.env.ALIVE_PIC,
     CL_PIC: process.env.COMMAND_LIST_PIC === undefined ? 'https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg' : process.env.COMMAND_LIST_PIC,
@@ -66,7 +69,5 @@ module.exports = {
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG", 
     SUPPORT: "905511384572-1617736751",
     SUPPORT2: "905511384572-1617736751",
-    SUPPORT3: "905511384572-1621015274",
-    WELCOME_LOGO: "https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg",
-    BYE_LOGO: "https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg"
+    SUPPORT3: "905511384572-1621015274"
 };
