@@ -48,7 +48,7 @@ module.exports = {
     U_VIDEO: process.env.UPLOAD_VIDEO === undefined ? 'default' : process.env.UPLOAD_VIDEO,
     U_NAME: process.env.USER_NAME === undefined ? '<😉>' : process.env.USER_NAME,
     C_EMOJI: process.env.COMMAND_EMOJI === undefined ? '🛸' : process.env.COMMAND_EMOJI,
-    D_EMOJI: process.env.DESC_EMOJI === undefined ? '🧮' : process.env.DESC_EMOJI,
+    D_EMOJI: process.env.DESC_EMOJI === undefined ? '🎠' : process.env.DESC_EMOJI,
     W_EMOJI: process.env.WARN_EMOJI === undefined ? '⚠️️' : process.env.WARN_EMOJI,
     B_PASSWORD: process.env.BOT_PASSWORD === undefined ? 'false' : process.env.BOT_PASSWORD,
     A_PIC: process.env.ALIVE_PIC === undefined ? 'https://telegra.ph/file/37c44022badbca8cf6635.jpg' : process.env.ALIVE_PIC,
