@@ -306,7 +306,7 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
             var degisiklikler = Lang.NEW_UPDATE;
             commits['all'].map(
                 (commit) => {
-                    degisiklikler += '📚 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                    degisiklikler += '|⌛️ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
                 }
             );
             var up_ch = await AlphaXnpm.update(config.LANG)
