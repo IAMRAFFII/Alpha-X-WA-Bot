@@ -1,6 +1,6 @@
 {
-    "name": "< Alpha-X whatsapp User Bot >", 
-    "description": "🎨 Alpha-x Project Is A Bot For Whatsapp 🎈 With Amazing Features And Enjoyable Things 😊 It Makes Easy and Fun To Use Whatsapp ♦ Enjoy!",
+    "name": "< Alpha-X Whatsapp User Bot >", 
+    "description": "🚀 Alpha-X project is bot for whatsapp, With enjoyable things and fun to use whatsapp 😉",
     "logo": "https://telegra.ph/file/26a74a9135c705ad9043b.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "alpha", "node.js", "fb", "wtzp", "userbot", "insta", "srilanka", "keywords", "team"],
     "repository": "https://github.com/sL-Alpha-X-Team/Alpha-X-Bot",
@@ -28,9 +28,24 @@
             "value": "false"
         },
         "CAPTION": {
-            "description": "Customizable CAPTION Message! Type a caption for bot media , Use => default, to change back.",
+            "description": "Customizable CAPTION Message! Type a caption for bot medias.",
             "required": false,
-            "value": "default"
+            "value": ""
+        },
+        "COMMAND_EMOJI": {
+            "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to commands.",
+            "required": false,
+            "value": "🛸"
+        },
+        "DESC_EMOJI": {
+            "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to discriptions.",
+            "required": false,
+            "value": "🧮"
+        },
+        "WARN_EMOJI": {
+            "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to warnings.",
+            "required": false,
+            "value": "⚠️️"
         },
         "COMMAND_LIST_KEY": {
             "description": "Customizable COMMAND LIST KEY type a key to get all command list >> EX: alpha ?(.*) ",
@@ -53,7 +68,7 @@
             "value": "https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg" 
         },
         "BIO_NAME": {
-            "description": "Customizable Auto Bio Name Message!, Use => default, to change back.",
+            "description": "Customizable Auto Bio Name Message!, type a name ot somthing to show with auto bio.",
             "required": false,
             "value": "default"
        },
@@ -63,9 +78,9 @@
             "value": "false"
        },
         "USER_NAME": {
-            "description": "Enter your name here , Use => default, to change back.",
+            "description": "Enter your name here.",
             "required": false,
-            "value": "Ａｌｐｈａ"
+            "value": ""
        },
         "DOWNLOAD_SONG": {
             "description": "Customizable downloading song Message!, Use => default, to change back.",
@@ -88,17 +103,17 @@
             "value": "default"
        },
         "BOT_NAME": {
-            "description": "Customizable BOT NAME! Type a Name for your bot, Use => default, to change back.",
+            "description": "Customizable BOT NAME! Type a Name for your bot.",
             "required": false,
             "value": "≪━─━─━─━─🖲️─━─━─━─━≫\n          *🚀 Ａｌｐｈａ-Ｘ 🚀*\n        ╚╩══• •✠•❀•✠ • •══╩╝"
         },
         "GIF_WEL": {
-            "description": "Customizable GIF WELCOME! A gif to welcome message , Use => default, to change back.",
+            "description": "Customizable GIF WELCOME! A gif to welcome message.",
             "required": false,
             "value": "dafault"
         },
         "GIF_BYE": {
-            "description": "Customizable GIF BYE! A gif to goodbye message , Use => default, to change back.",
+            "description": "Customizable GIF BYE! A gif to goodbye message.",
             "required": false,
             "value": "default"
         },
