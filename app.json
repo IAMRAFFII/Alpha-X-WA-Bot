@@ -35,12 +35,12 @@
         "COMMAND_EMOJI": {
             "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to commands.",
             "required": false,
-            "value": "🛸"
+            "value": "⚜️"
         },
         "DESC_EMOJI": {
             "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to discriptions.",
             "required": false,
-            "value": "🧮"
+            "value": "🎐"
         },
         "WARN_EMOJI": {
             "description": "Customizable COMMAND LIST EMOJI! Type a emoji for show next to warnings.",
