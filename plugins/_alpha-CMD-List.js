@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
                         HANDLER = '.';
                     }
                     if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += ' *' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
                         CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + '*' + Config.D_EMOJI + ' '  + Lang.DESC + ':* ```' + command.desc + '``` \n\n';
@@ -82,7 +82,7 @@ if (Config.WORKTYPE == 'private') {
                             HANDLER = '.';
                         }
                         if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += ' *' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                         }
                         if (!command.desc == '' && command.usage == '' && command.warn == '') {
                             CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + '*' + Config.D_EMOJI + ' '  + Lang.DESC + ':* ```' + command.desc + '``` \n\n';
@@ -139,7 +139,7 @@ else if (Config.WORKTYPE == 'public') {
                         HANDLER = '.';
                     }
                     if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += ' *' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                     }
                     if (!command.desc == '' && command.usage == '' && command.warn == '') {
                         CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + mmatch) : command.pattern) + '```\n' + '*' + Config.D_EMOJI + ' '  + Lang.DESC + ':* ```' + command.desc + '``` \n\n';
@@ -192,7 +192,7 @@ else if (Config.WORKTYPE == 'public') {
                             HANDLER = '.';
                         }
                         if (command.desc == '' && !command.usage == '' && command.warn == '') {
-                        CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        CMD_HELP += ' *' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + Config.E_EMOJI + ' '  + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
                         }
                         if (!command.desc == '' && command.usage == '' && command.warn == '') {
                             CMD_HELP += '*' + Config.C_EMOJI + ' '  + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmmatch) : command.pattern) + '```\n' + '*' + Config.D_EMOJI + ' '  + Lang.DESC + ':* ```' + command.desc + '``` \n\n';
