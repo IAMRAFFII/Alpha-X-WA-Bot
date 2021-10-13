@@ -235,7 +235,7 @@
         "updater": {
             "UPDATER_DESC": "Checks the update your bot.",
             "UPDATE": "✅ *Ａｌｐｈａ-Ｘ  Completely Up-To-Date*",
-            "NEW_UPDATE": "*🛸 New update available for Ａｌｐｈａ-Ｘ! 🛠️* \n✅ _Type_ *.up alpha* _to update bot!_ \n\n*🛠️ Changes:*\n",
+            "NEW_UPDATE": "*🧩 New update available for Ａｌｐｈａ-Ｘ! 🛠️* \n✅ _Type_ *.up now* _to update bot!_ \n\n*🛠️ Changes:*\n",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "🛠️ *Updating* _Ａｌｐｈａ-Ｘ_ 🚀",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
