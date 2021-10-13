@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'up$', fromMe: true, desc: Lang.UPDATER_DESC}, (async
         var Updates = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                Updates += '🏆 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                Updates += '|⌛️ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
             }
         );
         
