@@ -80,12 +80,12 @@
         "DOWNLOAD_SONG": {
             "description": "Customizable downloading song Message!, Use => default, to change back.",
             "required": false,
-            "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ...* 📥"
+            "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...* 📥"
        },
         "UPLOAD_SONG": {
             "description": "Customizable uploading song Message!, Use => default, to change back.",
             "required": false,
-            "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ...* 📤"
+            "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...* 📤"
        },
         "DOWNLOAD_VIDEO": {
             "description": "Customizable downloading yt video Message!, Use => default, to change back.",
