@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
   "dependencies": {
-    "alpha-wabot-npm": "^0.0.5"
+    "alpha-wabot-npm": "^0.0.6"
   }
 }
