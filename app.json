@@ -85,22 +85,22 @@
         "DOWNLOAD_SONG": {
             "description": "Customizable downloading song Message!, Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ...* 📥"
        },
         "UPLOAD_SONG": {
             "description": "Customizable uploading song Message!, Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ...* 📤"
        },
         "DOWNLOAD_VIDEO": {
             "description": "Customizable downloading yt video Message!, Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ...* 📥"
        },
         "UPLOAD_VIDEO": {
             "description": "Customizable uploading yt video Message!, Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ...* 📤"
        },
         "BOT_NAME": {
             "description": "Customizable BOT NAME! Type a Name for your bot.",
