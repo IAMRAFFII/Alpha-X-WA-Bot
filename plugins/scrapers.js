@@ -468,7 +468,7 @@ if (config.WORKTYPE == 'private') {
                 writer.addTag();
 
                 reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
             });
     }));
     
@@ -1091,7 +1091,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
             });
     }));
     
