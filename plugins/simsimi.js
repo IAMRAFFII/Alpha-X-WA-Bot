@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     Alpha.addCommand({pattern: 'simi ?(.*)', fromMe: true, desc: SIMI_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply( NEED );
-	const url = `https://api.simsimi.net/v2/?text=${match[1]}&lang=en&cf=true`;
+	const url = `https://api.simsimi.net/v2/?text=${match[1]}&lc=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
@@ -34,7 +34,7 @@ else if (Config.WORKTYPE == 'public') {
 
     Alpha.addCommand({pattern: 'simi ?(.*)', fromMe: false, desc: SIMI_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply( NEED );
-	const url = `https://api.simsimi.net/v2/?text=${match[1]}&lang=en&cf=true`;
+	const url = `https://api.simsimi.net/v2/?text=${match[1]}&lc=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
