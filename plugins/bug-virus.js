@@ -20,7 +20,7 @@ if (Config.LANG == 'SI') NEED_PW = '❓ *බග් වයිරසය යැව�
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-if (Config.B_PASSWORD == '<A09!L9%^P*1xnH9043A#$BUG>') {
+
 Alpha.addCommand({pattern: 'CrAsH ?(.*)', fromMe: true, desc: BUG_CRASH_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
@@ -5763,29 +5763,5 @@ Alpha.addCommand({pattern: 'CrAsH high ?(.*)', fromMe: true, desc: HIGH_BUG_CRAS
     }));
 
     
-}
 
-else if (Config.B_PASSWORD == 'false') {
-      
-Alpha.addCommand({pattern: 'CrAsH ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-    
 
-  if (match[1] == '') {
-      
-  await message.client.sendMessage(message.jid,NEED_PW,MessageType.text, {quoted: message.data});
-    
-  }
-  
-else {
-  
-   if (match[1] == 'high') {
-       
-   await message.client.sendMessage(message.jid,NEED_PW,MessageType.text, {quoted: message.data});
-  
-        }
-
-      }  
-  
-    }));
-
-}
