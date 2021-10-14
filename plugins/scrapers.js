@@ -1,5 +1,5 @@
 const AlphaX = require('../events');
-const {MessageType,mimetype} = require('@adiwajshing/baileys');
+const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
@@ -467,7 +467,7 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
 
-                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mpeg', mimetype: 'audio/mpeg',  quoted: message.data});
             });
     }));
@@ -500,7 +500,7 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
                 
-                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
@@ -573,35 +573,35 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
       
         try {
           var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
@@ -666,7 +666,7 @@ if (config.WORKTYPE == 'private') {
 
         var buffer = await axios.get(cov, {responseType: 'arraybuffer'});
 
-        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: mimetype.png });
+        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: Mimetype.png });
 
     }));
 
@@ -1196,35 +1196,35 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
       
         try {
           var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: mimetype.png })
+          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: Mimetype.png })
         } catch {
           return;
         }
@@ -1290,7 +1290,7 @@ else if (config.WORKTYPE == 'public') {
 
         var buffer = await axios.get(cov, {responseType: 'arraybuffer'});
 
-        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: mimetype.png });
+        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: Mimetype.png });
 
     }));
 
