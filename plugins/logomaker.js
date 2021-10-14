@@ -1,15 +1,15 @@
-/* Codded by Phaticusthiccy
+/* Codded by AlphaX
 
 Unlimited API for Photooxy, Textpro and Instagram scraper.
 
-Material: https://www.npmjs.com/package/textmaker-thiccy
-Github: https://github.com/phaticusthiccy/TextMaker-Unlimited
+Material: https://www.npmjs.com/package/textmaker-alpha-free
+Github: https://github.com/SL-Alpha-X/TextMaker-alpha-free
 
 This code works with unlimited and completely free an API scraper.
 Don't use it for illegal purposes.
 */
 
-const thiccysapi = require('free-textmaker-alpha'); // Import NPM Package
+const alphasapi = require('free-textmaker-alpha'); // Import NPM Package
 
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -36,7 +36,7 @@ if (Config.LANG == 'ES') desc_msg = 'Muestra herramientas de creación de textos
 if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
-Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
+Asena.addCommand({pattern: 'logomaker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
     var t3 = ''
@@ -288,92 +288,92 @@ Asena.addCommand({pattern: 'textmaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd = '💻 *Komut:* '
         desc_cmd = 'ℹ️ *Açıklama:* _'
     } else { 
-        usage_cmd = '*⌨️ Example:* _'
-        command_cmd = '💻 *Command:* '
+        usage_cmd = '*🔰️ Example:* _'
+        command_cmd = '⚜️ *Command:* '
         desc_cmd = 'ℹ️ *Description:* _'
     }
-    const msg = command_cmd + '```.textdevil``` \n' + desc_cmd + t1 + '_\n' + usage_cmd + '.textdevil Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2devil``` \n' + desc_cmd + t55 + '_\n' + usage_cmd + '.text2devil Phaticusthiccy_\n\n' +
-        command_cmd + '```.textbear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '.textbear Phaticusthiccy_\n\n' +
-        command_cmd + '```.textwolf``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '.textwolf Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textneon```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '.textneon Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2neon``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '.text2neon Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3neon``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '.text3neon Phaticusthiccy_\n\n' +
-        command_cmd + '```.text4neon``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '.text4neon Phaticusthiccy_\n\n' +
-        command_cmd + '```.text5neon``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.text5neon Phaticusthiccy_\n\n' +
-        command_cmd + '```.text6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.text6neon Phaticusthiccy_\n\n' +
-        command_cmd + '```.textlight``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '.textlight Phaticusthiccy_\n\n' +
-        command_cmd + '```.textjoker``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '.textjoker Phaticusthiccy_\n\n' +
-        command_cmd + '```.textninja``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '.textninja Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textglitter``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '.textglitter Phaticusthiccy_\n\n' +
-        command_cmd + '```.textbokeh``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '.textbokeh Phaticusthiccy_\n\n' +
-        command_cmd + '```.textmarvel``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '.textmarvel Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2marvel``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '.text2marvel Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textavengers``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.textavengers Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textgraf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '.textgraf Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2graf``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '.text2graf Developer;Phaticusthiccy_\n\n' +  
-        command_cmd + '```.text3graf``` \n' + desc_cmd + t53 + '_\n' + usage_cmd + '.text3graf Phaticusthiccy_\n\n' +
-        command_cmd + '```.text4graf``` \n' + desc_cmd + t67 + '_\n' + usage_cmd + '.text4graf Phaticusthiccy_\n\n' +
-        command_cmd + '```.text5graf``` \n' + desc_cmd + t74 + '_\n' + usage_cmd + '.text5graf Phaticusthiccy_\n\n' +
-        command_cmd + '```.textlion``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '.textlion Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '.textice Phaticusthiccy_\n\n' +
-        command_cmd + '```.textspace``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '.textspace Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2space``` \n' + desc_cmd + t68 + '_\n' + usage_cmd + '.text2space Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3space``` \n' + desc_cmd + t72 + '_\n' + usage_cmd + '.text3space Phaticusthiccy_\n\n' +
-        command_cmd + '```.textsmoke``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '.textsmoke Phaticusthiccy_\n\n' + // Thanks for @Unique_hunter for base.
-        command_cmd + '```.textglow``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '.textglow Phaticusthiccy_\n\n' +
-        command_cmd + '```.textfire``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '.textfire Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2fire``` \n' + desc_cmd + t46 + '_\n' + usage_cmd + '.text2fire Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3fire``` \n' + desc_cmd + t73 + '_\n' + usage_cmd + '.text3fire Phaticusthiccy_\n\n' +
-        command_cmd + '```.textharry``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '.textharry Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2harry``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.text2harry Phaticusthiccy_\n\n' +
-        command_cmd + '```.textcup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '.textcup Phaticusthiccy_\n\n' +
-        command_cmd + '```.textcemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '.textcemetery Phaticusthiccy_\n\n' +
-        command_cmd + '```.textstone``` \n' + desc_cmd + t30 + '_\n' + usage_cmd + '.textstone Phaticusthiccy_\n\n' +
-        command_cmd + '```.textgradient``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.textgradient Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2gradient``` \n' + desc_cmd + t76 + '_\n' + usage_cmd + '.text2gradient Phaticusthiccy_\n\n' +
-        command_cmd + '```.textmagma``` \n' + desc_cmd + t35 + '_\n' + usage_cmd + '.textmagma Phaticusthiccy_\n\n' +
-        command_cmd + '```.textbglass``` \n' + desc_cmd + t36 + '_\n' + usage_cmd + '.textbglass Phaticusthiccy_\n\n' +
-        command_cmd + '```.textpaper``` \n' + desc_cmd + t37 + '_\n' + usage_cmd + '.textpaper Phaticusthiccy_\n\n' +
-        command_cmd + '```.textmetal``` \n' + desc_cmd + t38 + '_\n' + usage_cmd + '.textmetal Phaticusthiccy_\n\n' +
-        command_cmd + '```.textwcolor``` \n' + desc_cmd + t39 + '_\n' + usage_cmd + '.textwcolor Phaticusthiccy_\n\n' +
-        command_cmd + '```.textart``` \n' + desc_cmd + t40 + '_\n' + usage_cmd + '.textart Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3d``` \n' + desc_cmd + t41 + '_\n' + usage_cmd + '.text3d Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2light``` \n' + desc_cmd + t42 + '_\n' + usage_cmd + '.text2light Phaticusthiccy_\n\n' +
-        command_cmd + '```.textrobo``` \n' + desc_cmd + t43 + '_\n' + usage_cmd + '.textrobo Phaticusthiccy_\n\n' +
-        command_cmd + '```.textblood``` \n' + desc_cmd + t44 + '_\n' + usage_cmd + '.textblood Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2blood``` \n' + desc_cmd + t45 + '_\n' + usage_cmd + '.text2blood Phaticusthiccy_\n\n' +
-        command_cmd + '```.textpink``` \n' + desc_cmd + t47 + '_\n' + usage_cmd + '.textpink Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2pink``` \n' + desc_cmd + t58 + '_\n' + usage_cmd + '.text2pink Phaticusthiccy_\n\n' +
-        command_cmd + '```.textsand``` \n' + desc_cmd + t48 + '_\n' + usage_cmd + '.textsand Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2sand``` \n' + desc_cmd + t49 + '_\n' + usage_cmd + '.text2sans Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3sand``` \n' + desc_cmd + t50 + '_\n' + usage_cmd + '.text3sand Phaticusthiccy_\n\n' +
-        command_cmd + '```.text4sand``` \n' + desc_cmd + t51 + '_\n' + usage_cmd + '.text4sand Phaticusthiccy_\n\n' +
-        command_cmd + '```.textberry``` \n' + desc_cmd + t52 + '_\n' + usage_cmd + '.textberry Phaticusthiccy_\n\n' +
-        command_cmd + '```.texthub``` \n' + desc_cmd + t54 + '_\n' + usage_cmd + '.texthub Thiccy;Hub_\n\n' +
-        command_cmd + '```.textretro``` \n' + desc_cmd + t56 + '_\n' + usage_cmd + '.textretro Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.textsci``` \n' + desc_cmd + t57 + '_\n' + usage_cmd + '.textsci Phaticusthiccy_\n\n' +
-        command_cmd + '```.textpubg``` \n' + desc_cmd + t59 + '_\n' + usage_cmd + '.textpubg Phaticusthiccy_\n\n' +
-        command_cmd + '```.textroad``` \n' + desc_cmd + t60 + '_\n' + usage_cmd + '.textroad Phaticusthiccy_\n\n' +
-        command_cmd + '```.textsad``` \n' + desc_cmd + t61 + '_\n' + usage_cmd + '.textsad Phaticusthiccy_\n\n' +
-        command_cmd + '```.textabear``` \n' + desc_cmd + t62 + '_\n' + usage_cmd + '.textabear Phaticusthiccy_\n\n' +
-        command_cmd + '```.textpuppy``` \n' + desc_cmd + t63 + '_\n' + usage_cmd + '.textpuppy Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2pubg``` \n' + desc_cmd + t64 + '_\n' + usage_cmd + '.text2pubg Phaticusthiccy_\n\n' +
-        command_cmd + '```.text3pubg``` \n' + desc_cmd + t65 + '_\n' + usage_cmd + '.text3pubg Phaticusthiccy_\n\n' +
-        command_cmd + '```.textheart``` \n' + desc_cmd + t66 + '_\n' + usage_cmd + '.textheart Phaticusthiccy_\n\n' +
-        command_cmd + '```.textangel``` \n' + desc_cmd + t69 + '_\n' + usage_cmd + '.textangel Phaticusthiccy_\n\n' +
-        command_cmd + '```.textleaf``` \n' + desc_cmd + t70 + '_\n' + usage_cmd + '.textleaf Phaticusthiccy_\n\n' +
-        command_cmd + '```.textgold``` \n' + desc_cmd + t71 + '_\n' + usage_cmd + '.textgold Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2gold``` \n' + desc_cmd + t79 + '_\n' + usage_cmd + '.text2gold Phaticusthiccy_\n\n' +
-        command_cmd + '```.textsnow``` \n' + desc_cmd + t75 + '_\n' + usage_cmd + '.textsnow Phaticusthiccy_\n\n' +
-        command_cmd + '```.textballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.textballoon Phaticusthiccy_\n\n' +
-        command_cmd + '```.textmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Phaticusthiccy_\n\n' +
-        command_cmd + '```.textglitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '.textglitch Developer;Phaticusthiccy_\n\n' +
-        command_cmd + '```.text2glitch``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.text2glitch Developer;Phaticusthiccy_'
+    const msg = command_cmd + '```.logodevil``` \n' + desc_cmd + t1 + '_\n' + usage_cmd + '.logodevil AlphaX_\n\n' +
+        command_cmd + '```.logo2devil``` \n' + desc_cmd + t55 + '_\n' + usage_cmd + '.logo2devil AlphaX_\n\n' +
+        command_cmd + '```.logobear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '.logobear AlphaX_\n\n' +
+        command_cmd + '```.logowolf``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '.logowolf Developer;AlphaX_\n\n' +
+        command_cmd + '```.logoneon```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '.logoneon AlphaX_\n\n' +
+        command_cmd + '```.logo2neon``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '.logo2neon AlphaX_\n\n' +
+        command_cmd + '```.logo3neon``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '.logo3neon AlphaX_\n\n' +
+        command_cmd + '```.logo4neon``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '.logo4neon AlphaX_\n\n' +
+        command_cmd + '```.logo5neon``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.logo5neon AlphaX_\n\n' +
+        command_cmd + '```.logo6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.logo6neon AlphaX_\n\n' +
+        command_cmd + '```.logolight``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '.logolight AlphaX_\n\n' +
+        command_cmd + '```.logojoker``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '.logojoker AlphaX_\n\n' +
+        command_cmd + '```.logoninja``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '.logoninja Developer;AlphaX_\n\n' +
+        command_cmd + '```.logoglitter``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '.logoglitter AlphaX_\n\n' +
+        command_cmd + '```.logobokeh``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '.logobokeh AlphaX_\n\n' +
+        command_cmd + '```.logomarvel``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '.logomarvel Developer;AlphaX_\n\n' +
+        command_cmd + '```.logo2marvel``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '.logo2marvel Developer;AlphaX_\n\n' +
+        command_cmd + '```.logoavengers``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.logoavengers Developer;AlphaX_\n\n' +
+        command_cmd + '```.logograf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '.logograf Developer;AlphaX_\n\n' +
+        command_cmd + '```.logo2graf``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '.logo2graf Developer;AlphaX_\n\n' +  
+        command_cmd + '```.logo3graf``` \n' + desc_cmd + t53 + '_\n' + usage_cmd + '.logo3graf AlphaX_\n\n' +
+        command_cmd + '```.logo4graf``` \n' + desc_cmd + t67 + '_\n' + usage_cmd + '.logo4graf AlphaX_\n\n' +
+        command_cmd + '```.logo5graf``` \n' + desc_cmd + t74 + '_\n' + usage_cmd + '.logo5graf AlphaX_\n\n' +
+        command_cmd + '```.logolion``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '.logolion Developer;AlphaX_\n\n' +
+        command_cmd + '```.logoice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '.logoice AlphaX_\n\n' +
+        command_cmd + '```.logospace``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '.logospace Developer;AlphaX_\n\n' +
+        command_cmd + '```.logo2space``` \n' + desc_cmd + t68 + '_\n' + usage_cmd + '.logo2space AlphaX_\n\n' +
+        command_cmd + '```.logo3space``` \n' + desc_cmd + t72 + '_\n' + usage_cmd + '.logo3space AlphaX_\n\n' +
+        command_cmd + '```.logosmoke``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '.logosmoke AlphaX_\n\n' + // Thanks for @Unique_hunter for base.
+        command_cmd + '```.logoglow``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '.logoglow AlphaX_\n\n' +
+        command_cmd + '```.logofire``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '.logofire AlphaX_\n\n' +
+        command_cmd + '```.logo2fire``` \n' + desc_cmd + t46 + '_\n' + usage_cmd + '.logo2fire AlphaX_\n\n' +
+        command_cmd + '```.logo3fire``` \n' + desc_cmd + t73 + '_\n' + usage_cmd + '.logo3fire AlphaX_\n\n' +
+        command_cmd + '```.logoharry``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '.logoharry AlphaX_\n\n' +
+        command_cmd + '```.logo2harry``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.logo2harry AlphaX_\n\n' +
+        command_cmd + '```.logocup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '.logocup AlphaX_\n\n' +
+        command_cmd + '```.logocemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '.logocemetery AlphaX_\n\n' +
+        command_cmd + '```.logostone``` \n' + desc_cmd + t30 + '_\n' + usage_cmd + '.logostone AlphaX_\n\n' +
+        command_cmd + '```.logogradient``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.logogradient AlphaX_\n\n' +
+        command_cmd + '```.logo2gradient``` \n' + desc_cmd + t76 + '_\n' + usage_cmd + '.logo2gradient AlphaX_\n\n' +
+        command_cmd + '```.logomagma``` \n' + desc_cmd + t35 + '_\n' + usage_cmd + '.logomagma AlphaX_\n\n' +
+        command_cmd + '```.logobglass``` \n' + desc_cmd + t36 + '_\n' + usage_cmd + '.logobglass AlphaX_\n\n' +
+        command_cmd + '```.logopaper``` \n' + desc_cmd + t37 + '_\n' + usage_cmd + '.logopaper AlphaX_\n\n' +
+        command_cmd + '```.logometal``` \n' + desc_cmd + t38 + '_\n' + usage_cmd + '.logometal AlphaX_\n\n' +
+        command_cmd + '```.logowcolor``` \n' + desc_cmd + t39 + '_\n' + usage_cmd + '.logowcolor AlphaX_\n\n' +
+        command_cmd + '```.logoart``` \n' + desc_cmd + t40 + '_\n' + usage_cmd + '.logoart AlphaX_\n\n' +
+        command_cmd + '```.logo3d``` \n' + desc_cmd + t41 + '_\n' + usage_cmd + '.logo3d Developer;AlphaX_\n\n' +
+        command_cmd + '```.logo2light``` \n' + desc_cmd + t42 + '_\n' + usage_cmd + '.logo2light AlphaX_\n\n' +
+        command_cmd + '```.logorobo``` \n' + desc_cmd + t43 + '_\n' + usage_cmd + '.logorobo AlphaX_\n\n' +
+        command_cmd + '```.logoblood``` \n' + desc_cmd + t44 + '_\n' + usage_cmd + '.logoblood AlphaX_\n\n' +
+        command_cmd + '```.logo2blood``` \n' + desc_cmd + t45 + '_\n' + usage_cmd + '.logo2blood AlphaX_\n\n' +
+        command_cmd + '```.logopink``` \n' + desc_cmd + t47 + '_\n' + usage_cmd + '.logopink AlphaX_\n\n' +
+        command_cmd + '```.logo2pink``` \n' + desc_cmd + t58 + '_\n' + usage_cmd + '.logo2pink AlphaX_\n\n' +
+        command_cmd + '```.logosand``` \n' + desc_cmd + t48 + '_\n' + usage_cmd + '.logosand AlphaX_\n\n' +
+        command_cmd + '```.logo2sand``` \n' + desc_cmd + t49 + '_\n' + usage_cmd + '.logo2sans AlphaX_\n\n' +
+        command_cmd + '```.logo3sand``` \n' + desc_cmd + t50 + '_\n' + usage_cmd + '.logo3sand AlphaX_\n\n' +
+        command_cmd + '```.logo4sand``` \n' + desc_cmd + t51 + '_\n' + usage_cmd + '.logo4sand AlphaX_\n\n' +
+        command_cmd + '```.logoberry``` \n' + desc_cmd + t52 + '_\n' + usage_cmd + '.logoberry AlphaX_\n\n' +
+        command_cmd + '```.logohub``` \n' + desc_cmd + t54 + '_\n' + usage_cmd + '.logohub Thiccy;Hub_\n\n' +
+        command_cmd + '```.logoretro``` \n' + desc_cmd + t56 + '_\n' + usage_cmd + '.logoretro Developer;AlphaX_\n\n' +
+        command_cmd + '```.logosci``` \n' + desc_cmd + t57 + '_\n' + usage_cmd + '.logosci AlphaX_\n\n' +
+        command_cmd + '```.logopubg``` \n' + desc_cmd + t59 + '_\n' + usage_cmd + '.logopubg AlphaX_\n\n' +
+        command_cmd + '```.logoroad``` \n' + desc_cmd + t60 + '_\n' + usage_cmd + '.logoroad AlphaX_\n\n' +
+        command_cmd + '```.logosad``` \n' + desc_cmd + t61 + '_\n' + usage_cmd + '.logosad AlphaX_\n\n' +
+        command_cmd + '```.logoabear``` \n' + desc_cmd + t62 + '_\n' + usage_cmd + '.logoabear AlphaX_\n\n' +
+        command_cmd + '```.logopuppy``` \n' + desc_cmd + t63 + '_\n' + usage_cmd + '.logopuppy AlphaX_\n\n' +
+        command_cmd + '```.logo2pubg``` \n' + desc_cmd + t64 + '_\n' + usage_cmd + '.logo2pubg AlphaX_\n\n' +
+        command_cmd + '```.logo3pubg``` \n' + desc_cmd + t65 + '_\n' + usage_cmd + '.logo3pubg AlphaX_\n\n' +
+        command_cmd + '```.logoheart``` \n' + desc_cmd + t66 + '_\n' + usage_cmd + '.logoheart AlphaX_\n\n' +
+        command_cmd + '```.logoangel``` \n' + desc_cmd + t69 + '_\n' + usage_cmd + '.logoangel AlphaX_\n\n' +
+        command_cmd + '```.logoleaf``` \n' + desc_cmd + t70 + '_\n' + usage_cmd + '.logoleaf AlphaX_\n\n' +
+        command_cmd + '```.logogold``` \n' + desc_cmd + t71 + '_\n' + usage_cmd + '.logogold AlphaX_\n\n' +
+        command_cmd + '```.logo2gold``` \n' + desc_cmd + t79 + '_\n' + usage_cmd + '.logo2gold AlphaX_\n\n' +
+        command_cmd + '```.logosnow``` \n' + desc_cmd + t75 + '_\n' + usage_cmd + '.logosnow AlphaX_\n\n' +
+        command_cmd + '```.logoballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.logoballoon AlphaX_\n\n' +
+        command_cmd + '```.logomatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.logomatrix AlphaX_\n\n' +
+        command_cmd + '```.logoglitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '.logoglitch Developer;AlphaX_\n\n' +
+        command_cmd + '```.logo2glitch``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.logo2glitch Developer;AlphaX_'
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
-Asena.addCommand({pattern: 'textdevil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
+Asena.addCommand({pattern: 'logodevil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -391,8 +391,8 @@ Asena.addCommand({pattern: 'textdevil ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textsci ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-science-fiction-text-effect-online-free-1038.html",
+Asena.addCommand({pattern: 'logosci ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-science-fiction-text-effect-online-free-1038.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -410,128 +410,128 @@ Asena.addCommand({pattern: 'textsci ?(.*)', fromMe: wk, dontAddCommandList: true
           } 
     });
 }));
-Asena.addCommand({pattern: 'textleaf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoleaf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/dark-green-typography-online-359.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textmatrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logomatrix ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/matrix-text-effect-154.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'text2gradient ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2gradient ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-3d-gradient-text-effect-online-600.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'textballoon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoballoon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/writing-your-name-on-hot-air-balloon-506.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'textsnow ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logosnow ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/snow-on-text-online-107.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'text2gold ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2gold ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/gold-text-effect-pro-271.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'text5graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo5graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
   var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/graffiti-color-199.html')
   var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
   await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'text3fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo3fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/dragon-fire-text-effect-111.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'text2space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-galaxy-style-free-name-logo-438.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
 }));
-Asena.addCommand({pattern: 'text3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/galaxy-text-effect-116.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textgold ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logogold ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/modern-gold-3-212.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'text3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo3space ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/galaxy-text-effect-116.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textangel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoangel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/wings-galaxy-206.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'text2pink ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2pink ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-a-blackpink-neon-logo-text-effect-online-710.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textabear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoabear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-funny-animations-of-a-traveling-bear-701.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
 }));
-Asena.addCommand({pattern: 'text6neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo6neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-light-effects-green-neon-online-429.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image)
 }));
-Asena.addCommand({pattern: 'textheart ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoheart ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/write-name-on-heart-with-wings-gifs-430.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
 }));
-Asena.addCommand({pattern: 'text4graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo4graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/text-graffiti-3d-208.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textpuppy ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logopuppy ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-puppy-cute-animated-online-478.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.gif })
 }));
-Asena.addCommand({pattern: 'textroad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoroad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-glowing-text-effects-online-706.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textsad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logosad ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/write-text-on-wet-glass-online-589.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'text3pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo3pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var img = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-the-cover-game-playerunknown-s-battlegrounds-401.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 }));
-Asena.addCommand({pattern: 'textpubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logopubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var vid = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/create-pubg-style-glitch-video-avatar-554.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.mp4 })
 }));
-Asena.addCommand({pattern: 'text2pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2pubg ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var vid = await WhatsAsenaStack.ephoto(match[1], 'https://en.ephoto360.com/lightning-pubg-video-logo-maker-online-615.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
     await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena', mimetype: Mimetype.mp4 })
 }));
-Asena.addCommand({pattern: 'text2devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
+Asena.addCommand({pattern: 'logo2devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -549,7 +549,7 @@ Asena.addCommand({pattern: 'text2devil ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'texthub ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logohub ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -559,7 +559,7 @@ Asena.addCommand({pattern: 'texthub ?(.*)', fromMe: wk, dontAddCommandList: true
         topText = match[1];
         bottomText = '';
     }
-    thiccysapi.textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html",
+    alphasapi.textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -577,7 +577,7 @@ Asena.addCommand({pattern: 'texthub ?(.*)', fromMe: wk, dontAddCommandList: true
           } 
     });
 }));
-Asena.addCommand({pattern: 'textretro ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoretro ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -587,7 +587,7 @@ Asena.addCommand({pattern: 'textretro ?(.*)', fromMe: wk, dontAddCommandList: tr
         topText = match[1];
         bottomText = '';
     }
-    thiccysapi.textpro("https://textpro.me/video-game-classic-8-bit-text-effect-1037.html",
+    alphasapi.textpro("https://textpro.me/video-game-classic-8-bit-text-effect-1037.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -605,8 +605,8 @@ Asena.addCommand({pattern: 'textretro ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text3graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/break-wall-text-effect-871.html",
+Asena.addCommand({pattern: 'logo3graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/break-wall-text-effect-871.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -624,8 +624,8 @@ Asena.addCommand({pattern: 'text3graf ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textberry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-berry-text-effect-online-free-1033.html",
+Asena.addCommand({pattern: 'logoberry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-berry-text-effect-online-free-1033.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -643,8 +643,8 @@ Asena.addCommand({pattern: 'textberry ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text4sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-a-summery-sand-writing-text-effect-988.html",
+Asena.addCommand({pattern: 'logo4sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-a-summery-sand-writing-text-effect-988.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -662,8 +662,8 @@ Asena.addCommand({pattern: 'text4sand ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text3sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/sand-engraved-3d-text-effect-989.html",
+Asena.addCommand({pattern: 'logo3sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/sand-engraved-3d-text-effect-989.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -681,8 +681,8 @@ Asena.addCommand({pattern: 'text3sand ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/sand-writing-text-effect-online-990.html",
+Asena.addCommand({pattern: 'logo2sand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/sand-writing-text-effect-online-990.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -700,8 +700,8 @@ Asena.addCommand({pattern: 'text2sand ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textsand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/write-in-sand-summer-beach-free-online-991.html",
+Asena.addCommand({pattern: 'logosand ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/write-in-sand-summer-beach-free-online-991.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -719,8 +719,8 @@ Asena.addCommand({pattern: 'textsand ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/halloween-fire-text-effect-940.html",
+Asena.addCommand({pattern: 'logo2fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/halloween-fire-text-effect-940.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -738,8 +738,8 @@ Asena.addCommand({pattern: 'text2fire ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textpink ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
+Asena.addCommand({pattern: 'logopink ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -757,8 +757,8 @@ Asena.addCommand({pattern: 'textpink ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2blood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
+Asena.addCommand({pattern: 'logo2blood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -776,8 +776,8 @@ Asena.addCommand({pattern: 'text2blood ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'textblood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/horror-blood-text-effect-online-883.html",
+Asena.addCommand({pattern: 'logoblood ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/horror-blood-text-effect-online-883.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -795,8 +795,8 @@ Asena.addCommand({pattern: 'textblood ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2light ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html",
+Asena.addCommand({pattern: 'logo2light ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -814,8 +814,8 @@ Asena.addCommand({pattern: 'text2light ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'textrobo ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html",
+Asena.addCommand({pattern: 'logorobo ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -833,7 +833,7 @@ Asena.addCommand({pattern: 'textrobo ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text3d ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo3d ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -843,7 +843,7 @@ Asena.addCommand({pattern: 'text3d ?(.*)', fromMe: wk, dontAddCommandList: true}
         topText = match[1];
         bottomText = '';
     }
-    thiccysapi.textpro("https://textpro.me/create-layered-text-effects-online-free-1032.html",
+    alphasapi.textpro("https://textpro.me/create-layered-text-effects-online-free-1032.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -861,8 +861,8 @@ Asena.addCommand({pattern: 'text3d ?(.*)', fromMe: wk, dontAddCommandList: true}
           } 
     });
 }));
-Asena.addCommand({pattern: 'textart ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html",
+Asena.addCommand({pattern: 'logoart ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -880,8 +880,8 @@ Asena.addCommand({pattern: 'textart ?(.*)', fromMe: wk, dontAddCommandList: true
           } 
     });
 }));
-Asena.addCommand({pattern: 'textwcolor ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html",
+Asena.addCommand({pattern: 'logowcolor ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -899,8 +899,8 @@ Asena.addCommand({pattern: 'textwcolor ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'textmagma ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-a-magma-hot-text-effect-online-1030.html",
+Asena.addCommand({pattern: 'logomagma ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-a-magma-hot-text-effect-online-1030.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -918,8 +918,8 @@ Asena.addCommand({pattern: 'textmagma ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textmetal ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-a-3d-glossy-metal-text-effect-1019.html",
+Asena.addCommand({pattern: 'logometal ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-a-3d-glossy-metal-text-effect-1019.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -937,8 +937,8 @@ Asena.addCommand({pattern: 'textmetal ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textpaper ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html",
+Asena.addCommand({pattern: 'logopaper ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -956,8 +956,8 @@ Asena.addCommand({pattern: 'textpaper ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textbglass ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/broken-glass-text-effect-free-online-1023.html",
+Asena.addCommand({pattern: 'logobglass ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/broken-glass-text-effect-free-online-1023.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -975,8 +975,8 @@ Asena.addCommand({pattern: 'textbglass ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'text5neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-3d-neon-light-text-effect-online-1028.html",
+Asena.addCommand({pattern: 'logo5neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-3d-neon-light-text-effect-online-1028.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -994,8 +994,8 @@ Asena.addCommand({pattern: 'text5neon ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textgradient ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/online-3d-gradient-text-effect-generator-1020.html",
+Asena.addCommand({pattern: 'logogradient ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/online-3d-gradient-text-effect-generator-1020.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1013,8 +1013,8 @@ Asena.addCommand({pattern: 'textgradient ?(.*)', fromMe: wk, dontAddCommandList:
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2harry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html",
+Asena.addCommand({pattern: 'logo2harry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1032,8 +1032,8 @@ Asena.addCommand({pattern: 'text2harry ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'textstone ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/3d-stone-cracked-cool-text-effect-1029.html",
+Asena.addCommand({pattern: 'logostone ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/3d-stone-cracked-cool-text-effect-1029.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1051,8 +1051,8 @@ Asena.addCommand({pattern: 'textstone ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textbear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html",
+Asena.addCommand({pattern: 'logobear ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1070,7 +1070,7 @@ Asena.addCommand({pattern: 'textbear ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logowolf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1080,7 +1080,7 @@ Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: tru
         topText = match[1];
         bottomText = '';
     }
-    thiccysapi.textpro("https://textpro.me/create-wolf-logo-galaxy-online-936.html",
+    alphasapi.textpro("https://textpro.me/create-wolf-logo-galaxy-online-936.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1098,8 +1098,8 @@ Asena.addCommand({pattern: 'textwolf ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'textneon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html",
+Asena.addCommand({pattern: 'logoneon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1117,8 +1117,8 @@ Asena.addCommand({pattern: 'textneon ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/neon-text-effect-online-879.html",
+Asena.addCommand({pattern: 'logo2neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/neon-text-effect-online-879.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1136,8 +1136,8 @@ Asena.addCommand({pattern: 'text2neon ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textlight ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/thunder-text-effect-online-881.html",
+Asena.addCommand({pattern: 'logolight ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/thunder-text-effect-online-881.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1155,8 +1155,8 @@ Asena.addCommand({pattern: 'textlight ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textjoker ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/create-logo-joker-online-934.html",
+Asena.addCommand({pattern: 'logojoker ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/create-logo-joker-online-934.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1174,7 +1174,7 @@ Asena.addCommand({pattern: 'textjoker ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoninja ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1184,7 +1184,7 @@ Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: tr
         topText = match[1];
         bottomText = '';
     }
-    thiccysapi.textpro("https://textpro.me/create-ninja-logo-online-935.html",
+    alphasapi.textpro("https://textpro.me/create-ninja-logo-online-935.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1202,8 +1202,8 @@ Asena.addCommand({pattern: 'textninja ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textglitter ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/advanced-glow-text-effect-873.html",
+Asena.addCommand({pattern: 'logoglitter ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/advanced-glow-text-effect-873.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1221,8 +1221,8 @@ Asena.addCommand({pattern: 'textglitter ?(.*)', fromMe: wk, dontAddCommandList: 
           } 
     });
 }));
-Asena.addCommand({pattern: 'textbokeh ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/bokeh-text-effect-876.html",
+Asena.addCommand({pattern: 'logobokeh ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/bokeh-text-effect-876.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1240,7 +1240,7 @@ Asena.addCommand({pattern: 'textbokeh ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logomarvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1250,7 +1250,7 @@ Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: t
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-logo-style-marvel-studios-online-971.html",
+    alphasapi.textpro("https://textpro.me/create-logo-style-marvel-studios-online-971.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1268,7 +1268,7 @@ Asena.addCommand({pattern: 'textmarvel ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2marvel ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1278,7 +1278,7 @@ Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: 
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html",
+    alphasapi.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1296,7 +1296,7 @@ Asena.addCommand({pattern: 'text2marvel ?(.*)', fromMe: wk, dontAddCommandList: 
           } 
     });
 }));
-Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoavengers ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1306,7 +1306,7 @@ Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList:
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html",
+    alphasapi.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1324,7 +1324,7 @@ Asena.addCommand({pattern: 'textavengers ?(.*)', fromMe: wk, dontAddCommandList:
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2glitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1334,7 +1334,7 @@ Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: 
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html",
+    alphasapi.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1351,7 +1351,7 @@ Asena.addCommand({pattern: 'text2glitch ?(.*)', fromMe: wk, dontAddCommandList: 
           } 
     });
 }));
-Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoglitch ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1361,7 +1361,7 @@ Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: t
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html",
+    alphasapi.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1379,7 +1379,7 @@ Asena.addCommand({pattern: 'textglitch ?(.*)', fromMe: wk, dontAddCommandList: t
           } 
     });
 }));
-Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logograf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1389,7 +1389,7 @@ Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: tru
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html",
+    alphasapi.textpro("https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1407,7 +1407,7 @@ Asena.addCommand({pattern: 'textgraf ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logo2graf ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1417,7 +1417,7 @@ Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: tr
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html",
+    alphasapi.textpro("https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1435,7 +1435,7 @@ Asena.addCommand({pattern: 'text2graf ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logolion ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1445,7 +1445,7 @@ Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: tru
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-lion-logo-mascot-online-938.html",
+    alphasapi.textpro("https://textpro.me/create-lion-logo-mascot-online-938.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1463,8 +1463,8 @@ Asena.addCommand({pattern: 'textlion ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'text3neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/neon-text-effect-online-963.html",
+Asena.addCommand({pattern: 'logo3neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/neon-text-effect-online-963.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1482,8 +1482,8 @@ Asena.addCommand({pattern: 'text3neon ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textice ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.textpro("https://textpro.me/ice-cold-text-effect-862.html",
+Asena.addCommand({pattern: 'logoice ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.textpro("https://textpro.me/ice-cold-text-effect-862.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1501,7 +1501,7 @@ Asena.addCommand({pattern: 'textice ?(.*)', fromMe: wk, dontAddCommandList: true
           } 
     });
 }));
-Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logospace ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -1511,7 +1511,7 @@ Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: tr
         topText = match[1];
         bottomText = 'ㅤ';
     }
-    thiccysapi.textpro("https://textpro.me/create-space-3d-text-effect-online-985.html",
+    alphasapi.textpro("https://textpro.me/create-space-3d-text-effect-online-985.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
@@ -1529,8 +1529,8 @@ Asena.addCommand({pattern: 'textspace ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textsmoke ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/other-design/create-an-easy-smoke-type-effect-390.html",
+Asena.addCommand({pattern: 'logosmoke ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/other-design/create-an-easy-smoke-type-effect-390.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1548,7 +1548,7 @@ Asena.addCommand({pattern: 'textsmoke ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textglow ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'logoglow ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
     var download = async(uri, filename, callback) => {
         await request.head(uri, async(err, res, body) => {    
             await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
@@ -1559,8 +1559,8 @@ Asena.addCommand({pattern: 'textglow ?(.*)', fromMe: wk, dontAddCommandList: tru
         await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glowttp.png'), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
     })
 }));
-Asena.addCommand({pattern: 'textfire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html",
+Asena.addCommand({pattern: 'logofire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1578,8 +1578,8 @@ Asena.addCommand({pattern: 'textfire ?(.*)', fromMe: wk, dontAddCommandList: tru
           } 
     });
 }));
-Asena.addCommand({pattern: 'textharry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/logo-and-text-effects/create-harry-potter-text-on-horror-background-178.html",
+Asena.addCommand({pattern: 'logoharry ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/logo-and-text-effects/create-harry-potter-text-on-horror-background-178.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1597,8 +1597,8 @@ Asena.addCommand({pattern: 'textharry ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'text4neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html",
+Asena.addCommand({pattern: 'logo4neon ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1616,8 +1616,8 @@ Asena.addCommand({pattern: 'text4neon ?(.*)', fromMe: wk, dontAddCommandList: tr
           } 
     });
 }));
-Asena.addCommand({pattern: 'textcemetery ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html",
+Asena.addCommand({pattern: 'logocemetery ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -1635,8 +1635,8 @@ Asena.addCommand({pattern: 'textcemetery ?(.*)', fromMe: wk, dontAddCommandList:
           } 
     });
 }));
-Asena.addCommand({pattern: 'textcup ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
-    thiccysapi.photooxy("https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html",
+Asena.addCommand({pattern: 'logocup ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+    alphasapi.photooxy("https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
