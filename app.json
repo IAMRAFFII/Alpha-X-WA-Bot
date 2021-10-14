@@ -72,11 +72,6 @@
             "required": false,
             "value": "default"
        },
-        "BOT_PASSWORD": {
-            "description": "Enter Password Here to send spams & bug",
-            "required": false,
-            "value": "false"
-       },
         "USER_NAME": {
             "description": "Enter your name here.",
             "required": false,
