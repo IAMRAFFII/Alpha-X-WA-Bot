@@ -11,7 +11,7 @@ const WhatsAsenaStack = require('alpha-wabot-npm')
 const request = require('request');
 
 const Language = require('../language');
-const Lang = Language.getString('ttp');
+const Lang = Language.getString('ttp_attp');
 
 var description = ''
 var cmd = ''
