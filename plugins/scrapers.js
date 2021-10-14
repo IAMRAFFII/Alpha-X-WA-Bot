@@ -130,7 +130,7 @@ if (config.WORKTYPE == 'private') {
    AlphaX.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
 
         if (!message.reply_message) {
-            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text, {quoted: message.data});
         }
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
@@ -357,12 +357,12 @@ if (config.WORKTYPE == 'private') {
         const res_5 = '#3 *' + dlang_lang + '* ' + '_' + cls5 + '_\n*' + dlang_similarity + '* ' + '_' + cls6 + '_ \n'
         const res_6 = '#4 *' + dlang_lang + '* ' + '_' + cls7 + '_\n*' + dlang_similarity + '* ' + '_' + cls8 + '_'
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
-        await message.client.sendMessage(message.jid,rep_7,MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid,rep_7,MessageType.text, {quoted: message.data});
     }));
    AlphaX.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
-            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text, {quoted: message.data});
         }
         let opts = {
             amount: parseFloat(match[1]).toFixed(2).replace(/\.0+$/,''),
@@ -441,11 +441,11 @@ if (config.WORKTYPE == 'private') {
     }
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});;    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});;
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});;
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -467,14 +467,14 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});;
+                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: false});
             });
     }));
 
    AlphaX.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});;    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
     
         var VID = '';
         try {
@@ -486,28 +486,28 @@ if (config.WORKTYPE == 'private') {
                 VID = match[1].split('/')[3]
             }
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
         }
-        var reply = await message.client.sendMessage(message.jid,config.D_VIDEO,MessageType.text, {quoted: message.data});;
+        var reply = await message.client.sendMessage(message.jid,config.D_VIDEO,MessageType.text, {quoted: message.data});
 
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./media/' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});;
+            reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});
             await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
         });
     }));
 
    AlphaX.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;    
-        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
+        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});
 
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text, {quoted: message.data});
         }
     
         var mesaj = '';
@@ -515,29 +515,29 @@ if (config.WORKTYPE == 'private') {
             mesaj += '*' + video.title + '* - ' + video.url + '\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
         await reply.delete();
     }));
 
    AlphaX.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;    
-        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
+        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text, {quoted: message.data});
 
         var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid, info, MessageType.text, {quoted: message.data});
         await reply.delete();
     }));
 
    AlphaX.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});
         
         var img_list = await AlphaXnpn.search_image(match[1])
-        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
           await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
@@ -624,7 +624,7 @@ if (config.WORKTYPE == 'private') {
         
    AlphaX.addCommand({pattern: 'lyric ?(.*)', fromMe: true, desc: Slang.LY_DESC }, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, {quoted: message.data});
 
         var aut = await solenolyrics.requestLyricsFor(`${match[1]}`); 
         var son = await solenolyrics.requestAuthorFor(`${match[1]}`);
@@ -846,7 +846,7 @@ else if (config.WORKTYPE == 'public') {
    AlphaX.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
         if (!message.reply_message) {
-            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text, {quoted: message.data});
         }
 
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
@@ -886,7 +886,7 @@ else if (config.WORKTYPE == 'public') {
    AlphaX.addCommand({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
-            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text, {quoted: message.data});
         }
         let opts = {
             amount: parseFloat(match[1]).toFixed(2).replace(/\.0+$/,''),
@@ -1031,11 +1031,11 @@ else if (config.WORKTYPE == 'public') {
 
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});;    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});;
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});;
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1057,14 +1057,14 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});;
+                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: false});
             });
     }));
 
    AlphaX.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});;    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
     
         var VID = '';
         try {
@@ -1076,28 +1076,28 @@ else if (config.WORKTYPE == 'public') {
                 VID = match[1].split('/')[3]
             }
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
         }
-        var reply = await message.client.sendMessage(message.jid,config.D_VIDEO,MessageType.text, {quoted: message.data});;
+        var reply = await message.client.sendMessage(message.jid,config.D_VIDEO,MessageType.text, {quoted: message.data});
 
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./media/' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});;
+            reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});
             await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
         });
     }));
 
    AlphaX.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;    
-        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
+        var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});
 
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text, {quoted: message.data});;
+            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text, {quoted: message.data});
         }
     
         var mesaj = '';
@@ -1105,29 +1105,29 @@ else if (config.WORKTYPE == 'public') {
             mesaj += '*' + video.title + '* - ' + video.url + '\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
         await reply.delete();
     }));
 
    AlphaX.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;    
-        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});    
+        var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text, {quoted: message.data});
 
         var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid, info, MessageType.text, {quoted: message.data});
         await reply.delete();
     }));
 
    AlphaX.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text, {quoted: message.data});
         
         var img_list = await AlphaXnpn.search_image(match[1])
-        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});;
+        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
           await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
@@ -1215,7 +1215,7 @@ else if (config.WORKTYPE == 'public') {
 
    AlphaX.addCommand({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, {quoted: message.data});;
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, {quoted: message.data});
 
         var aut = await solenolyrics.requestLyricsFor(`${match[1]}`); 
         var son = await solenolyrics.requestAuthorFor(`${match[1]}`);
