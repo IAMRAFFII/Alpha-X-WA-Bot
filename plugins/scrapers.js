@@ -445,7 +445,7 @@ if (config.WORKTYPE == 'private') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -478,7 +478,7 @@ if (config.WORKTYPE == 'private') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1068,7 +1068,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1101,7 +1101,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
