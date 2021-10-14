@@ -445,7 +445,7 @@ if (config.WORKTYPE == 'private') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -467,18 +467,18 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
 
-                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG})
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
             });
     }));
     
-    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: true, desc: 'Get song as a mp3 documet'}, (async (message, match) => {
+    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: true, desc: 'Get song as a mp3 documet file'}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -500,7 +500,7 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
                 
-                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG)
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
@@ -1068,7 +1068,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1090,18 +1090,18 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG)
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
             });
     }));
     
-    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: false, desc: 'Get song as a mp3 documet'}, (async (message, match) => {
+    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: false, desc: 'Get song as a mp3 documet file'}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG);
   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -1123,7 +1123,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
   
-                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG)
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
