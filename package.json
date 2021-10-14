@@ -1,36 +1,36 @@
 {
   "name": "Alpha-X-WA-Bot",
   "version": "1.0.0",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "description": "Alpha-X project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./WhatsAsenaDuplicated/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
+    "url": "git+https://github.com/SL-Alpha-X-Team/Alpha-X-WA-Bot.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
     "ai",
-    "asena",
+    "alpha",
     "api",
     "unlimited",
-    "asenadev",
+    "alphadev",
     "machine learning",
     "automatic",
     "whatsapp web",
     "whatsapp api",
-    "WhatsAsena"
+    "AlphaXWAbot"
   ],
   "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @phaticusthiccy",
+  "developer": "Alpha-X-Dev / @SL-Alpha-X",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://github.com/SL-Alpha-X-Team/Alpha-X-WA-Bot/issues"
   },
-  "homepage": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated#readme",
+  "homepage": "https://github.com/SL-Alpha-X-Team/Alpha-X-WA-Bot#readme",
   "dependencies": {
     "alpha-wabot-npm": "^0.0.6"
   }
