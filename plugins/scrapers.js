@@ -1,5 +1,5 @@
 const AlphaX = require('../events');
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+const {MessageType,mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
@@ -409,7 +409,7 @@ if (config.WORKTYPE == 'private') {
                 text: ttsMessage,
                 voice: LANG
             });
-            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data, quoted: message.data});
+            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data, quoted: message.data});
         }));
     }
     else {
@@ -436,7 +436,7 @@ if (config.WORKTYPE == 'private') {
                 text: ttsMessage,
                 voice: LANG
             });
-            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
+            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
         }));
     }
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
@@ -452,7 +452,7 @@ if (config.WORKTYPE == 'private') {
             quality: 'highestaudio',
         });
     
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.png'));
+        got.stream(arama[0].image).pipe(fs.createWriteStream( './media/' + title + '.png'));
         ffmpeg(stream)
             .audioBitrate(320)
             .save('./media/' + title + '.mp3')
@@ -462,13 +462,46 @@ if (config.WORKTYPE == 'private') {
                     .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
                         type: 3,
-                        data: fs.readFileSync(title + '.png'),
+                        data: fs.readFileSync( './media/' + title + '.png'),
                         description: arama[0].description
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: false});
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: mimetype.png, caption: config.U_SONG, quoted: message.data})
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mpeg', mimetype: 'audio/mpeg',  quoted: message.data});
+            });
+    }));
+    
+    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: true, desc: 'Get song as a mp3 documet'}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
+        let arama = await yts(match[1]);
+        arama = arama.all;
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+  
+        let title = arama[0].title.replace(' ', '+');
+        let stream = ytdl(arama[0].videoId, {
+            quality: 'highestaudio',
+        });
+    
+        got.stream(arama[0].image).pipe(fs.createWriteStream( './media/' + title + '.jpg'));
+        ffmpeg(stream)
+            .audioBitrate(320)
+            .save('./media/' + title + '.mp3')
+            .on('end', async () => {
+                const writer = new ID3Writer(fs.readFileSync('./media/' + title + '.mp3'));
+                writer.setFrame('TIT2', arama[0].title)
+                    .setFrame('TPE1', [arama[0].author.name])
+                    .setFrame('APIC', {
+                        type: 3,
+                        data: fs.readFileSync( './media/' + title + '.jpg'),
+                        description: arama[0].description
+                    });
+                writer.addTag();
+                
+                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: mimetype.png, caption: config.U_SONG, quoted: message.data})
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
 
@@ -495,7 +528,7 @@ if (config.WORKTYPE == 'private') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:mimetype.mp4, quoted: message.data});
         });
     }));
 
@@ -540,35 +573,35 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
       
         try {
           var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
@@ -633,7 +666,7 @@ if (config.WORKTYPE == 'private') {
 
         var buffer = await axios.get(cov, {responseType: 'arraybuffer'});
 
-        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: Mimetype.png });
+        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: mimetype.png });
 
     }));
 
@@ -1026,7 +1059,7 @@ else if (config.WORKTYPE == 'public') {
             text: ttsMessage,
             voice: LANG
         });
-        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
     }));
 
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
@@ -1042,7 +1075,7 @@ else if (config.WORKTYPE == 'public') {
             quality: 'highestaudio',
         });
     
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.png'));
+        got.stream(arama[0].image).pipe(fs.createWriteStream( './media/' + title + '.png'));
         ffmpeg(stream)
             .audioBitrate(320)
             .save('./media/' + title + '.mp3')
@@ -1052,13 +1085,46 @@ else if (config.WORKTYPE == 'public') {
                     .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
                         type: 3,
-                        data: fs.readFileSync(title + '.png'),
+                        data: fs.readFileSync( './media/' + title + '.png'),
                         description: arama[0].description
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.U_SONG,MessageType.text, {quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: false});
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mpeg', mimetype: 'audio/mpeg',  quoted: message.data});
+            });
+    }));
+    
+    AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: false, desc: 'Get song as a mp3 documet'}, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data});    
+        let arama = await yts(match[1]);
+        arama = arama.all;
+        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,config.D_SONG,MessageType.text, {quoted: message.data});
+  
+        let title = arama[0].title.replace(' ', '+');
+        let stream = ytdl(arama[0].videoId, {
+            quality: 'highestaudio',
+        });
+    
+        got.stream(arama[0].image).pipe(fs.createWriteStream( './media/' + title + '.jpg'));
+        ffmpeg(stream)
+            .audioBitrate(320)
+            .save('./media/' + title + '.mp3')
+            .on('end', async () => {
+                const writer = new ID3Writer(fs.readFileSync('./media/' + title + '.mp3'));
+                writer.setFrame('TIT2', arama[0].title)
+                    .setFrame('TPE1', [arama[0].author.name])
+                    .setFrame('APIC', {
+                        type: 3,
+                        data: fs.readFileSync( './media/' + title + '.jpg'),
+                        description: arama[0].description
+                    });
+                writer.addTag();
+  
+                reply =  await message.client.sendMessage(message.jid, fs.readFileSync('./media/' + title  + '.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.U_SONG, quoted: message.data})
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }));
 
@@ -1085,7 +1151,7 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid,config.U_VIDEO,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
+            await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:mimetype.mp4, quoted: message.data});
         });
     }));
 
@@ -1130,35 +1196,35 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text, {quoted: message.data});
         try {
           var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img1.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img2.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img3.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
 
         try {
           var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img4.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
       
         try {
           var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
-          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: Mimetype.png })
+          await message.sendMessage(Buffer.from(img5.data), MessageType.image, { mimetype: mimetype.png })
         } catch {
           return;
         }
@@ -1224,7 +1290,7 @@ else if (config.WORKTYPE == 'public') {
 
         var buffer = await axios.get(cov, {responseType: 'arraybuffer'});
 
-        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: Mimetype.png });
+        await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut , mimetype: mimetype.png });
 
     }));
 
