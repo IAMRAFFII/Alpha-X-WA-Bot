@@ -445,8 +445,9 @@ if (config.WORKTYPE == 'private') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
-
+        const dpic = await axios.get(`${config.D_SONG_PIC}`, {responseType: 'arraybuffer'})
+        var reply = await message.client.sendMessage(message.jid, Buffer.from(dpic.data), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
+ 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
@@ -478,8 +479,9 @@ if (config.WORKTYPE == 'private') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
-  
+        const dpic = await axios.get(`${config.D_SONG_PIC}`, {responseType: 'arraybuffer'})
+        var reply = await message.client.sendMessage(message.jid, Buffer.from(dpic.data), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
+   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
@@ -1068,8 +1070,9 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
-
+        const dpic = await axios.get(`${config.D_SONG_PIC}`, {responseType: 'arraybuffer'})
+        var reply = await message.client.sendMessage(message.jid, Buffer.from(dpic.data), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
+ 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
@@ -1101,8 +1104,9 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        var reply = await message.client.sendMessage(message.jid, fs.readFileSync('./media/downloading.png'), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
-  
+        const dpic = await axios.get(`${config.D_SONG_PIC}`, {responseType: 'arraybuffer'})
+        var reply = await message.client.sendMessage(message.jid, Buffer.from(dpic.data), MessageType.image, { mimetype: Mimetype.png, caption: config.D_SONG });
+   
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
