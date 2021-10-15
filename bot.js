@@ -222,7 +222,7 @@ async function asynchronous_ch() {
         }
     })    
     AlphaxCN.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Alpha-X-WA-Bot ')}${chalk.blue.bold('Creating...')}
+        console.log(`${chalk.green.bold('Ａｌｐｈａ-Ｘ-WA-Bot ')}${chalk.blue.bold('Creating...')}
 ${chalk.white.bold('💡 Version:')} ${chalk.red.bold(config.VERSION)}
 
 ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
@@ -273,7 +273,7 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
         asynchronous_ch()
         await new Promise(r => setTimeout(r, 200));
         let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('🚀 Alpha-X-WA-Bot ' + afwhasena));
+        console.log(chalk.bgGreen('🚀 Ａｌｐｈａ-Ｘ-WA-Bot ' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
         let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*WhatsAsena Chatbot Olarak Çalışıyor!* 🐺\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*WhatsAsena Working as a Chatbot! 🐺*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.fulleva off* _command to return to normal mode._\n\n*Thanks For Using WhatsAsena 💌*\n    *- Eva*'
         if (AlphaxCN.user.jid == one || AlphaxCN.user.jid == two || AlphaxCN.user.jid == three || AlphaxCN.user.jid == four || AlphaxCN.user.jid == five || AlphaxCN.user.jid == six || AlphaxCN.user.jid == seven || AlphaxCN.user.jid == eight) {
@@ -453,144 +453,128 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
                      
                        catch (error) {
                             if (config.NOLOG == 'true') return;
-                            var error_report = await AlphaXnpm.error(config.LANG)
-                            await AlphaxCN.sendMessage(AlphaxCN.user.jid, error_report.replace('{real_error}', error), MessageType.text, {detectLinks: false})
-
                             if (config.LANG == 'SI') {
-                                await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ වාර්තාව [ Alpha-X ] 🚀*\n' + 
-                                    '\n*⚙ Alpha-X හි දෝෂයක් සිදු වී ඇත!*'+
+                                await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ වාර්තාව [ Ａｌｐｈａ-Ｘ ] 🚀*\n' + 
+                                    '\n*⚙ Ａｌｐｈａ-Ｘ හි දෝෂයක් සිදු වී ඇත!*'+
                                     '\n_♦ මෙම දෝෂ ලඝු සටහනට ඔබේ අංකය හෝ විරුද්ධවාදියෙකුගේ අංකය ඇතුළත් විය හැකිය. කරුණාකර එය සමඟ ප්‍රවේශම් වන්න!_' +
                                     '\n_🛸 ඔබට අපගේ වට්සැප් කණ්ඩායමට උදව් සඳහා ලිවිය හැකිය ._' +
-                                    '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ ' +
+                                    '\n_*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                     '\n_මෙම පණිවිඩය ඔබගේ අංකයට යා යුතුව තිබුණි (සුරැකි පණිවිඩ)._\n' +
                                     '\n*දෝෂය:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Only Absolutely URLs Supported_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
                                         '\n*📋 විසඳුම:* _You can use commands in any chat, except the LOG number._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Deleting Plugin_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
                                         '\n*📋 විසඳුම:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Split of Undefined_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
                                         '\n*📋 විසඳුම:* _Restarting will be enough._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _SQL Database Error_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Database corruption._ ' +
                                         '\n*📋 විසඳුම:* _There is no known solution. You can try reinstalling it._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Ookla Server Connection_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Speedtest data cannot be transmitted to the server._' +
                                         '\n*📋 විසඳුම:* _If you use it one more time the problem will be solved._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Requested Audio Params_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Using the TTS command outside the Latin alphabet._' +
                                         '\n*📋 විසඳුම:* _The problem will be solved if you use the command in Latin letters frame._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _No Such File or Directory_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Incorrect coding of the plugin._' +
                                         '\n*📋 විසඳුම:* _Please check the your plugin codes._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Error 404 HTTPS_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
                                         '\n*📋 විසඳුම:* _Wait a while and try again. If you still get the error, perform the transaction on the website.._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Using IMG or Wiki commands._' +
                                         '\n*📋 විසඳුම:* _There is no solution for this error. It is not a fatal error._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Using IMG or Wiki commands._' +
                                         '\n*📋 විසඳුම:* _There is no solution for this error. It is not a fatal error._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Bailyes Action Error_ ' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _The exact reason is unknown. More than one option may have triggered this error._' +
                                         '\n*📋 විසඳුම:* _If you use it again, it may improve. If the error continues, you can try to restart._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Cannot Decode Text or Media_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Incorrect use of the plug._' +
                                         '\n*📋 විසඳුම:* _Please use the commands as written in the plugin description._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ විශ්ලේෂණය [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 ප්‍රධාන දෝෂය:* _Word Character Usage_' +
-                                        '\n_🏷 ඔබට අපගේ සහායක කණ්ඩායමට සම්බන්ධ විය හැකිය:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 හේතුව:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
                                         '\n*📋 විසඳුම:* _The problem will be solved if you use the command in Latin alphabet.._'
                                         , MessageType.text
@@ -604,140 +588,127 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
                                 }
                             }
                             else {
-                                await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR REPORT [ Alpha-X ] 🚀*\n' + 
-                                    '\n*⚙ Alpha-X an error has occurred!*'+
+                                await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR REPORT [ Ａｌｐｈａ-Ｘ ] 🚀*\n' + 
+                                    '\n*⚙ Ａｌｐｈａ-Ｘ an error has occurred!*'+
                                     '\n_♦ This error log may include your number or the number of an opponent. Please be careful with it!_' +
-                                    '\n_🛸 You can write to our Telegram group for help._' +
-                                    '\n_🏷 Aslo you can join our support group:_ ' +
+                                    '\n_🏷 Aslo you can join our support group:_ \n *https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE* ' +
                                     '\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Only Absolutely URLs Supported_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
                                         '\n*📋 Solution:* _You can use commands in any chat, except the LOG number._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Deleting Plugin_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
                                         '\n*📋 Solution:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Split of Undefined_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
                                         '\n*📋 Solution:* _Restarting will be enough._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _SQL Database Error_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Database corruption._ ' +
                                         '\n*📋 Solution:* _There is no known solution. You can try reinstalling it._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Ookla Server Connection_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Speedtest data cannot be transmitted to the server._' +
                                         '\n*📋 Solution:* _If you use it one more time the problem will be solved._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Requested Audio Params_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Using the TTS command outside the Latin alphabet._' +
                                         '\n*📋 Solution:* _The problem will be solved if you use the command in Latin letters frame._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*🛠 Main Error:* _No Such File or Directory_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Incorrect coding of the plugin._' +
                                         '\n*📋 Solution:* _Please check the your plugin codes._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Error 404 HTTPS_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
                                         '\n*📋 Solution:* _Wait a while and try again. If you still get the error, perform the transaction on the website.._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Reply Delete Function_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Using IMG or Wiki commands._' +
                                         '\n*📋 Solution:* _There is no solution for this error. It is not a fatal error._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Reply Delete Function_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Using IMG or Wiki commands._' +
                                         '\n*📋 Solution:* _There is no solution for this error. It is not a fatal error._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Bailyes Action Error_ ' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
                                         '\n*📋 Solution:* _If you use it again, it may improve. If the error continues, you can try to restart._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Cannot Decode Text or Media_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
+
                                         '\n*🌡 Reason:* _Incorrect use of the plug._' +
                                         '\n*📋 Solution:* _Please use the commands as written in the plugin description._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Alpha-X ] 🚧*\n' + 
+                                    return await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 ERROR ANALYSIS [ Ａｌｐｈａ-Ｘ ] 🚧*\n' + 
                                         '\n========== _Error Resolved!_ ==========' +
                                         '\n\n*🛠 Main Error:* _Word Character Usage_' +
-                                        '\n_🏷 Aslo you can join our support group:_ \n*https://chat.whatsapp.com/Ku8MincABBWAEOaG44PqZE*' +
                                         '\n*🌡 Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
                                         '\n*📋 Solution:* _The problem will be solved if you use the command in Latin alphabet.._'
                                         , MessageType.text
