@@ -86,7 +86,7 @@ async function AlphaxBot () {
     AlphaxCN.setMaxListeners(0);
     var proxyAgent_var = ''
     if (config.PROXY.includes('https') || config.PROXY.includes('http')) {
-      AlphaxCN.AlphaxCNectOptions.agent = ProxyAgent (config.PROXY)
+      AlphaxCN.connectOptions.agent = ProxyAgent (config.PROXY)
     }
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
@@ -221,7 +221,7 @@ async function asynchronous_ch() {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
     })    
-    AlphaxCN.on('AlphaxCNecting', async () => {
+    AlphaxCN.on('connecting', async () => {
         console.log(`${chalk.green.bold('Alpha-X-WA-Bot ')}${chalk.blue.bold('Creating...')}
 ${chalk.white.bold('💡 Version:')} ${chalk.red.bold(config.VERSION)}
 
@@ -450,8 +450,12 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
                             await command.function(whats, match);
                             
                         }
+                     
                        catch (error) {
                             if (config.NOLOG == 'true') return;
+                            var error_report = await AlphaXnpm.error(config.LANG)
+                            await AlphaxCN.sendMessage(AlphaxCN.user.jid, error_report.replace('{real_error}', error), MessageType.text, {detectLinks: false})
+
                             if (config.LANG == 'SI') {
                                 await AlphaxCN.sendMessage(AlphaxCN.user.jid, '*🚀 දෝෂ වාර්තාව [ Alpha-X ] 🚀*\n' + 
                                     '\n*⚙ Alpha-X හි දෝෂයක් සිදු වී ඇත!*'+
@@ -755,13 +759,13 @@ ${chalk.blue.italic('📲 Connecting to WhatsApp...')}`);
     // ==================== End Error Message ====================
 
     try {
-        await AlphaxCN.AlphaxCNect();
+        await AlphaxCN.connect();
     } catch {
         if (!nodb) {
             console.log(chalk.red.bold('Loading Old Version Session...'))
             AlphaxCN.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
-                await AlphaxCN.AlphaxCNect();
+                await AlphaxCN.connect();
             } catch {
                 return;
             }
