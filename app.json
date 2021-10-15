@@ -59,12 +59,12 @@
         "ALIVE_PIC": {
             "description": "Customizable ALIVE PICTURE Photo! Type a link of image.",
             "required": false,
-            "value": "https://telegra.ph/file/37c44022badbca8cf6635.jpg"
+            "value": ""
         },
         "COMMAND_LIST_PIC": {
             "description": "Customizable COMMAND LIST MSG PICTURE Photo! Type a link of image.",
             "required": false,
-            "value": "https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg" 
+            "value": "" 
         },
         "BIO_NAME": {
             "description": "Customizable Auto Bio Name Message!, type a name ot somthing to show with auto bio.",
@@ -77,22 +77,27 @@
             "value": ""
        },
         "DOWNLOAD_SONG": {
-            "description": "Customizable downloading song Message!, Use => default, to change back.",
+            "description": "Customizable downloading song Message!.",
             "required": false,
             "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...* 📥"
        },
+        "DOWNLOAD_SONG_PIC": {
+            "description": "Customizable downloading song Message PICTURE! tipe a link of a pic.",
+            "required": false,
+            "value": ""
+       },
         "UPLOAD_SONG": {
-            "description": "Customizable uploading song Message!, Use => default, to change back.",
+            "description": "Customizable uploading song Message!.",
             "required": false,
             "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ...* 📤"
        },
         "DOWNLOAD_VIDEO": {
-            "description": "Customizable downloading yt video Message!, Use => default, to change back.",
+            "description": "Customizable downloading yt video Message!.",
             "required": false,
             "value": "*🄳ᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ...* 📥"
        },
         "UPLOAD_VIDEO": {
-            "description": "Customizable uploading yt video Message!, Use => default, to change back.",
+            "description": "Customizable uploading yt video Message!.",
             "required": false,
             "value": "*🅄ᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ...* 📤"
        },
@@ -104,12 +109,12 @@
         "GIF_WEL": {
             "description": "Customizable GIF WELCOME! A gif to welcome message.",
             "required": false,
-            "value": "dafault"
+            "value": ""
         },
         "GIF_BYE": {
             "description": "Customizable GIF BYE! A gif to goodbye message.",
             "required": false,
-            "value": "default"
+            "value": ""
         },
         "ANTI_LINK": {
             "description": "Link Blocking System. If anyone send link to group he was banded from group! ",
