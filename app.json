@@ -10,8 +10,7 @@
     "env": {
         "ASENA_SESSION": {
             "description": "Type here your QR code. Get it using >> https://replit.com/@ALPHAXXXBOT/Alpha-X-bot ",
-            "required": true,
-            "value": "ASENA;;;eyJjbGllbnRJRCI6InVWS21LNUs3WmlyVzV6ajhEUmFxRmc9PSIsInNlcnZlclRva2VuIjoiMUBLY2xFTk5KMWVuMms3MkhSc3B4b2NUTUxRTkx2bXBGR21wNHRpd2VNQmNoS0ZoV3orNXQ2U0V5UUYyMXJveG5xdlV0ckZybXR5L3JxOFE9PSIsImNsaWVudFRva2VuIjoiQUlubU5iS091ZFZ2QWdJNVBOSFZ4TmdxTnY5QnlXTkRBNmNBRTEwU25UUT0iLCJlbmNLZXkiOiJsaDZ2RnIrN2J5Wm5zS0xjZmRMTWhuVmJKbG1obnMwbWFWV25xeE4yWmhRPSIsIm1hY0tleSI6InBZRDcrR0xPbHB4OXlpMnNXcksrY2JPSzBPbVpYaWMySVVRRml4MllTZ289In0="
+            "required": true
         },
         "SUDO": {
             "description": "Sudo mode is gives other controler for your bot , Leave it blank if you'r not using it , Number must be Like 94XXXXXXX,0",
@@ -150,7 +149,7 @@
         "HEROKU_API_KEY": {
             "description": "Heroku API Key.",
             "required": true,
-            "value": "4576fc06-2fc6-4ee3-b9ad-a86c0a9845c8"
+            "value": ""
         },
         "MUTE_MESSAGE": {
             "description": "Customizable Mute Message! Use => default, to change back.",
@@ -185,10 +184,10 @@
         "HEROKU_APP_NAME": {
             "description": "Heroku APP Name.",
             "required": true,
-            "value": "alpha-bot-alpha-bot"
+            "value": ""
         },
         "DEBUG": {
-            "description": "Dont Change!",
+            "description": "‎",
             "required": true,
             "value": "false"
         },
