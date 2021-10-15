@@ -548,7 +548,7 @@ if (config.WORKTYPE == 'private') {
             mesaj += '*🔖 ' + video.title + '* - \n```🔎 ' + video.url + '```\n\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid, fs.readFileSync( './media/yt.png' ), MessageType.image, { mimetype: Mimetype.png, caption: mesaj, quoted: message.data});
         await reply.delete();
     }));
 
@@ -1171,7 +1171,7 @@ else if (config.WORKTYPE == 'public') {
             mesaj += '*🔖 ' + video.title + '* - \n```🔎 ' + video.url + '```\n\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid, fs.readFileSync( './media/yt.png' ), MessageType.image, { mimetype: Mimetype.png, caption: mesaj, quoted: message.data});
         await reply.delete();
     }));
 
