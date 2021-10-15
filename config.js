@@ -50,8 +50,10 @@ module.exports = {
     C_EMOJI: process.env.COMMAND_EMOJI === undefined ? '⚜️' : process.env.COMMAND_EMOJI,
     D_EMOJI: process.env.DESC_EMOJI === undefined ? '🎐' : process.env.DESC_EMOJI,
     W_EMOJI: process.env.WARN_EMOJI === undefined ? '⚠️️' : process.env.WARN_EMOJI,
-    A_PIC: process.env.ALIVE_PIC === undefined ? 'https://telegra.ph/file/37c44022badbca8cf6635.jpg' : process.env.ALIVE_PIC,
-    CL_PIC: process.env.COMMAND_LIST_PIC === undefined ? 'https://telegra.ph/file/3f8b4cdfd4855d42a658a.jpg' : process.env.COMMAND_LIST_PIC,
+    A_PIC: process.env.ALIVE_PIC === undefined ? '' : process.env.ALIVE_PIC,
+    CL_PIC: process.env.COMMAND_LIST_PIC === undefined ? '' : process.env.COMMAND_LIST_PIC,
+    C_SONG_PIC: process.env.DOWNLOAD_SONG_PIC === undefined ? '' : process.env.DOWNLOAD_SONG_PIC,
+
     BRANCH: 'main',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
