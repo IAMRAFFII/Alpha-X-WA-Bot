@@ -64,7 +64,7 @@
         "COMMAND_LIST_PIC": {
             "description": "Customizable COMMAND LIST MSG PICTURE Photo! Type a link of image.",
             "required": false,
-            "value": "" 
+            "value": "https://telegra.ph/file/dbcd7959b5669c310532e.jpg" 
         },
         "BIO_NAME": {
             "description": "Customizable Auto Bio Name Message!, type a name ot somthing to show with auto bio.",
