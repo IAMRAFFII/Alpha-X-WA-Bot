@@ -50,7 +50,7 @@ module.exports = {
     C_EMOJI: process.env.COMMAND_EMOJI === undefined ? '⚜️' : process.env.COMMAND_EMOJI,
     D_EMOJI: process.env.DESC_EMOJI === undefined ? '🎐' : process.env.DESC_EMOJI,
     W_EMOJI: process.env.WARN_EMOJI === undefined ? '⚠️️' : process.env.WARN_EMOJI,
-    A_PIC: process.env.ALIVE_PIC === undefined ? '' : process.env.ALIVE_PIC,
+    A_PIC: process.env.ALIVE_PIC === undefined ? 'https://telegra.ph/file/2a070fbdae40233a9cbe0.jpg' : process.env.ALIVE_PIC,
     CL_PIC: process.env.COMMAND_LIST_PIC === undefined ? '' : process.env.COMMAND_LIST_PIC,
     C_SONG_PIC: process.env.DOWNLOAD_SONG_PIC === undefined ? '' : process.env.DOWNLOAD_SONG_PIC,
 
