@@ -8,7 +8,7 @@ if (Config.LANG == 'SI') RDMORE_DESC = 'readmore ලෙස පනිවිඩි
       
 if (Config.WORKTYPE == 'private') {
 
-Alpha.addCommand({pattern: 'rdmore ?(.*)', fromMe: true, desc: RDMORE_DESC}, (async (message, match) => {
+Alpha.addCommand({pattern: 'rdmore ?(.*)', fromMe: true, deleteCommand: true, desc: RDMORE_DESC}, (async (message, match) => {
 
 if (message.reply_message === true) {
 
