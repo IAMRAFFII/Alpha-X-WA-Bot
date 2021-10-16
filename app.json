@@ -83,7 +83,7 @@
         "DOWNLOAD_SONG_PIC": {
             "description": "Customizable downloading song Message PICTURE! tipe a link of a pic.",
             "required": false,
-            "value": ""
+            "value": "https://telegra.ph/file/1c99228e953ccbfb9801c.jpg"
        },
         "UPLOAD_SONG": {
             "description": "Customizable uploading song Message!.",
