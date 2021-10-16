@@ -59,7 +59,7 @@
         "ALIVE_PIC": {
             "description": "Customizable ALIVE PICTURE Photo! Type a link of image.",
             "required": false,
-            "value": ""
+            "value": "https://telegra.ph/file/2a070fbdae40233a9cbe0.jpg"
         },
         "COMMAND_LIST_PIC": {
             "description": "Customizable COMMAND LIST MSG PICTURE Photo! Type a link of image.",
@@ -69,12 +69,11 @@
         "BIO_NAME": {
             "description": "Customizable Auto Bio Name Message!, type a name ot somthing to show with auto bio.",
             "required": false,
-            "value": "default"
+            "value": "⚜️ Ａｌｐｈａ-Ｘ 🔖"
        },
         "USER_NAME": {
             "description": "Enter your name here.",
-            "required": false,
-            "value": ""
+            "required": false
        },
         "DOWNLOAD_SONG": {
             "description": "Customizable downloading song Message!.",
