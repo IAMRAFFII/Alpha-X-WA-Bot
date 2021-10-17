@@ -19,7 +19,7 @@ Alpha.addCommand({ pattern: 'getpp$', fromMe: true, desc: DESC}, (async (message
             );
      }));
 } else if (CON.WORKTYPE == 'public') {
-Alpha.addCommand({ pattern: 'getpp$', fromMe: true, DESC: 'To get profile picture on user or group'}, (async (message, match) => { 
+Alpha.addCommand({ pattern: 'getpp$', fromMe: false, DESC: 'To get profile picture on user or group'}, (async (message, match) => { 
 
             var ppUrl = await message.client.getProfilePicture(message.jid)
                 const resim = await Axios.get(ppUrl, {responseType: 'arraybuffer'})
