@@ -4,7 +4,7 @@ const Axios = require('axios');
 const CON = require('../config')
 
 var DESC = ''
-if (CON.LANG == 'EN') DESC == 'To get profile picture on user or group'
+if (CON.LANG == 'EN') DESC == 'To get profile picture of user or group'
 if (CON.LANG == 'SI') DESC == 'පරිශීලකයාගේ හෝ කණ්ඩායමේ පැතිකඩ පින්තූරයක් ලබා ගැනීමට'
 
 if (CON.WORKTYPE == 'private') {
