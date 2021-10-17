@@ -6,17 +6,17 @@ const CON = require ('../config')
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-var DESC == ''
-if (CON.LANG == 'EN') DESC == 'Use it as a dictionary.\nEg: .dict en_US;lead\n For supporting languages send •.lngcode•'
-if (CON.LANG == 'SI') DESC == 'එය ශබ්ද කෝෂයක් ලෙස භාවිතා කරන්න. \nඋදා: .did en_US; hello \n සහය දක්වන භාෂා සඳහා යවන්න •.lngcode•'
+var DESC = ''
+if (CON.LANG == 'EN') DESC = 'Use it as a dictionary.\nEg: .dict en_US;lead\n For supporting languages send •.lngcode•'
+if (CON.LANG == 'SI') DESC = 'එය ශබ්ද කෝෂයක් ලෙස භාවිතා කරන්න. \nඋදා: .did en_US; hello \n සහය දක්වන භාෂා සඳහා යවන්න •.lngcode•'
 
 var NEED == ''
-if (CON.LANG == 'EN') NEED == '*🔎 Please Enter Word!* \n ```Ex: .dict en_US;hey```'
-if (CON.LANG == 'SI') NEED == '*🔎 කරුණාකර වචනය ඇතුළත් කරන්න!* \n ```උදා: .dict en_US;hey```'
+if (CON.LANG == 'EN') NEED = '*🔎 Please Enter Word!* \n ```Ex: .dict en_US;hey```'
+if (CON.LANG == 'SI') NEED = '*🔎 කරුණාකර වචනය ඇතුළත් කරන්න!* \n ```උදා: .dict en_US;hey```'
 
 var LOAD == ''
-if (CON.LANG == 'EN') LOAD == '*🔖 Loading ...*'
-if (CON.LANG == 'SI') LOAD == '*🔖 පූරණය වෙමින් කරුණාකර රැඳී සිටින්න ...*'
+if (CON.LANG == 'EN') LOAD = '*🔖 Loading ...*'
+if (CON.LANG == 'SI') LOAD = '*🔖 පූරණය වෙමින් කරුණාකර රැඳී සිටින්න ...*'
 
 if (CON.WORKTYPE == 'private') {
 
