@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'private') {
                 await message.sendMessage(Buffer(resim.data), MessageType.image, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL)});
             }
             else if (payload.includes('{logo}')) {
-                await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAlphaXDuplicated/media/Alpha-X.png'), MessageType.video, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL).replace('{asenalogo}', '')});
+                await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/media/Alpha-X.png'), MessageType.video, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL).replace('{asenalogo}', '')});
             }
             else {
                 await message.client.sendMessage(message.jid,payload.replace('{version}', Config.VERSION).replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL), MessageType.text);
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
                 await message.sendMessage(Buffer(resim.data), MessageType.image, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL)});
             }
             else if (payload.includes('{logo}')) {
-                await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAlphaXDuplicated/media/Alpha-X.png'), MessageType.video, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL).replace('{asenalogo}', '')});
+                await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/media/Alpha-X.png'), MessageType.video, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL).replace('{asenalogo}', '')});
             }
             else {
                 await message.client.sendMessage(message.jid,payload.replace('{version}', Config.VERSION).replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL), MessageType.text);
