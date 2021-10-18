@@ -288,9 +288,9 @@ Asena.addCommand({pattern: 'logomaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd = '💻 *Komut:* '
         desc_cmd = 'ℹ️ *Açıklama:* _'
     } else { 
-        usage_cmd = '*🔰️ Example:* _'
-        command_cmd = '⚜️ *Command:* '
-        desc_cmd = 'ℹ️ *Description:* _'
+        usage_cmd = '*🎭 Example:* _'
+        command_cmd = '🔖 *Command:* '
+        desc_cmd = '🧿 *Description:* _'
     }
     const msg = command_cmd + '```.logodevil``` \n' + desc_cmd + t1 + '_\n' + usage_cmd + '.logodevil AlphaX_\n\n' +
         command_cmd + '```.logo2devil``` \n' + desc_cmd + t55 + '_\n' + usage_cmd + '.logo2devil AlphaX_\n\n' +
