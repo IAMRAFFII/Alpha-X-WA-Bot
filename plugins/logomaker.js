@@ -25,7 +25,7 @@ var ddd = ggg.toString('utf-8')
 clh.pay = ddd
 var desc_msg = ''
 if (Config.LANG == 'TR') desc_msg = 'Sınırsız erişime sahip textmaker araçlarını gösterir.'
-if (Config.LANG == 'EN') desc_msg = 'Shows textmaker tools with unlimited access.'
+if (Config.LANG == 'EN') desc_msg = 'Shows logomaker tools with unlimited access.'
 if (Config.LANG == 'RU') desc_msg = 'Показывает инструменты для создания текстов с неограниченным доступом.'
 if (Config.LANG == 'AZ') desc_msg = 'Sınırsız girişi olan textmaker alətləri göstərir.'
 if (Config.LANG == 'PT') desc_msg = 'Mostra ferramentas textmaker com acesso ilimitado.'
@@ -288,9 +288,9 @@ Asena.addCommand({pattern: 'logomaker$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd = '💻 *Komut:* '
         desc_cmd = 'ℹ️ *Açıklama:* _'
     } else { 
-        usage_cmd = '*🎭 Example:* _'
-        command_cmd = '🔖 *Command:* '
-        desc_cmd = '🧿 *Description:* _'
+        usage_cmd = '*🔖 Example:* _'
+        command_cmd = Config.C_EMOJI + ' *Command:* '
+        desc_cmd = Config.D_EMOJI + ' *Description:* _'
     }
     const msg = command_cmd + '```.logodevil``` \n' + desc_cmd + t1 + '_\n' + usage_cmd + '.logodevil AlphaX_\n\n' +
         command_cmd + '```.logo2devil``` \n' + desc_cmd + t55 + '_\n' + usage_cmd + '.logo2devil AlphaX_\n\n' +
