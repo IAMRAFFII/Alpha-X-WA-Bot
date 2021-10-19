@@ -5,8 +5,8 @@ const axios = require('axios');
 const config = require('../config');
 
 var DESC = ''
-if (config.LANG == 'SI') DESC = 'It sends complimentry sentenses.'
-if (config.LANG == 'EN') DESC = 'එය අනුපූරක වාක්‍ය යවයි.'
+if (config.LANG == 'EN') DESC = 'It sends complimentry sentenses.'
+if (config.LANG == 'SI') DESC = 'එය අනුපූරක වාක්‍ය යවයි.'
 
 if (config.WORKTYPE == 'private') {
 
