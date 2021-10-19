@@ -5,8 +5,8 @@ const axios = require('axios');
 const config = require('../config');
 
 var DESC = ''
-if (config.LANG == 'SI') DESC = 'To get mod apps.'
-if (config.LANG == 'EN') DESC = 'ඔබට මොඩ් apps ලබාගැනීමට.'
+if (config.LANG == 'EN') DESC = 'To get mod apps.'
+if (config.LANG == 'SI') DESC = 'ඔබට මොඩ් apps ලබාගැනීමට.'
 
 if (config.WORKTYPE == 'private') {
 
@@ -21,7 +21,7 @@ if (config.WORKTYPE == 'private') {
 		  '*📘 ' + '*Size*' +'* ```' + json.result[0].size + '```\n\n\n' + 
 		  '*📗 ' + '*Link*' +':* ```' + json.result[0].link + '```\n', MessageType.text, {quoted: message.data});
 	  } catch {
-		  return await message.client.sendMessage(message.jid, '*❌ Error Not Found!*' , MessageType.text, {quoted: message.data});
+		  return await message.client.sendMessage(message.jid, '*🏷️ Can\'t find app!*' , MessageType.text, {quoted: message.data});
 	  }
   });
 } 
@@ -39,7 +39,7 @@ else if (config.WORKTYPE == 'public') {
 		  '*📘 ' + '*Size*' +'* ```' + json.result[0].size + '```\n\n\n' + 
 		  '*📗 ' + '*Link*' +':* ```' + json.result[0].link + '```\n', MessageType.text, {quoted: message.data});
 	  } catch {
-		  return await message.client.sendMessage(message.jid, '*❌ Error Not Found!*' , MessageType.text, {quoted: message.data});
+		  return await message.client.sendMessage(message.jid, '*🏷️ Can\'t find app!*' , MessageType.text, {quoted: message.data});
 	  }
   });
 }
