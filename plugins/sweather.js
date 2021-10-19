@@ -5,8 +5,8 @@ const axios = require('axios');
 const config = require('../config');
 
 var SWDESC = ''
-if (config.LANG == 'SI') SWDESC = 'Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p.'
-if (config.LANG == 'EN') SWDESC = 'අභ්යවකාශ කාලගුණ පර්යේෂණ මධ්යස්ථානය (SWRC) විසින් සපයනු ලබන අභ්යවකාශ කාලගුණ නිරීක්ෂණ පිළිබඳ සතිපතා අර්ථකථන ඔබට ලබා දෙයි.'
+if (config.LANG == 'EN') SWDESC = 'Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p.'
+if (config.LANG == 'SI') SWDESC = 'අභ්යවකාශ කාලගුණ පර්යේෂණ මධ්යස්ථානය (SWRC) විසින් සපයනු ලබන අභ්යවකාශ කාලගුණ නිරීක්ෂණ පිළිබඳ සතිපතා අර්ථකථන ඔබට ලබා දෙයි.'
 
 if (config.WORKTYPE == 'private') {
 
