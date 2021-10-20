@@ -1,7 +1,7 @@
 const Alpha = require('../events');
 const Config = require('../config');
+const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const Axios = require('axios');
-const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');const Axios = require('axios');
 
 const Language = require('../language');
 const Lang = Language.getString('_alpha');
