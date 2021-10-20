@@ -7,10 +7,10 @@ const Language = require('../language');
 const Lang = Language.getString('_alpha');
 
 if (Config.WORKTYPE == 'private') {
-const PIC = await Axios.get(`${Config.A_PIC}`, {responseType: 'arraybuffer'})
-
 
     Alpha.addCommand({pattern:`${Config.CL_KEY}`, fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    const PIC = await Axios.get(`${Config.A_PIC}`, {responseType: 'arraybuffer'})
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -121,11 +121,10 @@ const PIC = await Axios.get(`${Config.A_PIC}`, {responseType: 'arraybuffer'})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-const PIC = await Axios.get(`${Config.A_PIC}`, {responseType: 'arraybuffer'})
-
-
 
     Alpha.addCommand({pattern: `${Config.CL_KEY}`, fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    const PIC = await Axios.get(`${Config.A_PIC}`, {responseType: 'arraybuffer'})
 
         var CMD_HELP = '';
         if (match[1] === '') {
