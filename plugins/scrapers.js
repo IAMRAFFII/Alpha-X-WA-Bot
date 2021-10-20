@@ -889,8 +889,6 @@ if (config.WORKTYPE == 'private') {
 
 }
 else if (config.WORKTYPE == 'public') {
-const PIC = await axios.get(`${config.A_PIC}`, {responseType: 'arraybuffer'})
-
 
    AlphaX.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
