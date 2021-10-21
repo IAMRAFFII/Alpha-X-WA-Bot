@@ -292,7 +292,7 @@ if (config.WORKTYPE == 'private') {
         succ_on_bio = 'Autobio успешно открыт!'
         succ_off_bio = 'Autobio успешно закрыт!'
     }
-    if (coඑnfig.LANG == 'ES') {
+    if (config.LANG == 'ES') {
         auto_dsc = '¡Agrega un reloj en vivo a tu biografía!'
         alr_on_bio = '¡Autobio ya está abierto!'
         alr_off_bio = '¡Autobio está cerrado actualmente!'
