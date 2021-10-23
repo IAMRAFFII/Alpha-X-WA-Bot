@@ -9,9 +9,14 @@
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Type here your QR code. Get it using >> https://replit.com/@ALPHAXXXBOT/Alpha-X-bot ",
+            "description": "Type here your QR code. Get it using >> https://replit.com/@ALPHAXXXBOT/Alpha-X-bot",
             "required": true
         },
+        "DELETE_MSG": {
+            "description": "If you want to delete searching,uploading,downloading msgs delete after file or message sent.",
+            "required": false,
+            "value": "false"
+
         "SUDO": {
             "description": "Sudo mode is gives other controler for your bot , Leave it blank if you'r not using it , Number must be Like 94XXXXXXX,0",
             "required": false
