@@ -53,8 +53,7 @@ module.exports = {
     A_PIC: process.env.ALIVE_PIC === undefined ? 'https://telegra.ph/file/99ed3cd4706f2c7937813.jpg' : process.env.ALIVE_PIC,
     CL_PIC: process.env.COMMAND_LIST_PIC === undefined ? 'https://telegra.ph/file/dbcd7959b5669c310532e.jpg' : process.env.COMMAND_LIST_PIC,
     D_SONG_PIC: process.env.DOWNLOAD_SONG_PIC === undefined ? 'https://telegra.ph/file/1c99228e953ccbfb9801c.jpg' : process.env.DOWNLOAD_SONG_PIC,
-    DEL: process.env.DELETE_MSG === undefined ? 'false' : process.env.DELETE_MSG,
-
+    
     BRANCH: 'main',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
