@@ -44,12 +44,12 @@ const Clang = Language.getString('covid');
 const wiki = require('wikijs').default;
 var gis = require('g-i-s');
 
-var replyang_dsc = ''
+var dlang_dsc = ''
 var closer_res = ''
-var replyang_lang = ''
-var replyang_similarity = ''
-var replyang_other = ''
-var replyang_input = ''
+var dlang_lang = ''
+var dlang_similarity = ''
+var dlang_other = ''
+var dlang_input = ''
 
 if (config.LANG == 'TR') {
     dlang_dsc = 'Yanıtlanan mesajın dilini tahmin eder.'
@@ -477,11 +477,6 @@ if (config.WORKTYPE == 'private') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
                
              });
-             
-       if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
     
     AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: true, desc: 'Get song as a mp3 documet file'}, (async (message, match) => {
@@ -522,11 +517,6 @@ if (config.WORKTYPE == 'private') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data}); 
                 
             });
-
-       if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
 
    AlphaX.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
@@ -559,11 +549,6 @@ if (config.WORKTYPE == 'private') {
 
             await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
         });
-        
-        if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
 
    AlphaX.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
@@ -585,11 +570,7 @@ if (config.WORKTYPE == 'private') {
         });
 
         await message.client.sendMessage(message.jid, fs.readFileSync( './media/yt.mp4' ), MessageType.video, { mimetype: Mimetype.gif, caption: mesaj, quoted: message.data, contextInfo: { forwardingScore: 49, isForwarded: false }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": '🚀 YT Links For: ' + `${match[1]}` + ' 🔎', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": Buffer.from(PIC.data)}}}});
-        
-        if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-        
+
     }));
 
    AlphaX.addCommand({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
@@ -1140,11 +1121,6 @@ else if (config.WORKTYPE == 'public') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {filename: title + '.m4a', mimetype: 'audio/mpeg',  quoted: message.data});
                
              });
-             
-       if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
     
     AlphaX.addCommand({pattern: 'mp3 ?(.*)', fromMe: false, desc: 'Get song as a mp3 documet file'}, (async (message, match) => {
@@ -1185,11 +1161,6 @@ else if (config.WORKTYPE == 'public') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg',quoted: message.data}); 
                 
             });
-
-       if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
 
    AlphaX.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
@@ -1222,11 +1193,6 @@ else if (config.WORKTYPE == 'public') {
 
             await message.client.sendMessage(message.jid,fs.readFileSync('./media/' + VID + '.mp4'), MessageType.video, {mimetype:Mimetype.mp4, quoted: message.data});
         });
-        
-        if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-
     }));
 
    AlphaX.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
@@ -1248,12 +1214,9 @@ else if (config.WORKTYPE == 'public') {
         });
 
         await message.client.sendMessage(message.jid, fs.readFileSync( './media/yt.mp4' ), MessageType.video, { mimetype: Mimetype.gif, caption: mesaj, quoted: message.data, contextInfo: { forwardingScore: 49, isForwarded: false }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": '🚀 YT Links For: ' + `${match[1]}` + ' 🔎', "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": Buffer.from(PIC.data)}}}});
-        
-        if (config.DEL == 'true') {
-        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true})
-        }
-        
+
     }));
+
 
    AlphaX.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
