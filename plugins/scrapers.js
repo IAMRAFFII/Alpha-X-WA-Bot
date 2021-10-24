@@ -436,7 +436,7 @@ if (config.WORKTYPE == 'private') {
                 text: ttsMessage,
                 voice: LANG
             });
-            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
+            await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
         }));
     }
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
@@ -1080,7 +1080,7 @@ else if (config.WORKTYPE == 'public') {
             text: ttsMessage,
             voice: LANG
         });
-        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype:Mimetype.mp4, quoted: message.dataAudio, ptt: true, quoted: message.data});
     }));
 
    AlphaX.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
