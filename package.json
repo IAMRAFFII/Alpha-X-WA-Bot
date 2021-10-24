@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/SL-Alpha-X-Team/Alpha-X-WA-Bot#readme",
   "dependencies": {
-    "alpha-wabot-npm": "^0.0.8",
+    "alpha-wabot-npm": "^0.0.9",
     "free-textmaker-alpha": "^0.0.2"
   }
 }
